@@ -47,7 +47,6 @@ class RulesActivity : AppCompatActivity() {
             sliderDots.addView(mDots[i])
         }
         if (mDots.size > 0) {
-            mDots[position]!!.textSize = 45f
             mDots[position]!!.setTextColor(resources.getColor(R.color.white))
         }
     }
@@ -61,14 +60,16 @@ class RulesActivity : AppCompatActivity() {
             addDotsIndicator(position)
             count = position
 
-            if (position == 0) {
-                nextButton.isEnabled = false
-
-            } else if (position == mDots.size-1) {
+            if (position == mDots.size-1) {
                 nextButton.isEnabled = true
 
                 nextButton.visibility = Button.VISIBLE
                 nextButton.text = "Let's Go"
+
+            } else {
+                nextButton.isEnabled = false
+
+                nextButton.visibility = Button.INVISIBLE
             }
         }
 
