@@ -1,56 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@mipmap/slider_background"
+    android:gravity="center"
+    android:orientation="vertical"
     tools:context="com.example.shashankmohabia.morphme.LoginActivity">
 
-
     <ImageView
-        android:id="@+id/imageRegisterScreenLogo"
-        android:layout_width="400dp"
-        android:layout_height="400dp"
-        android:layout_above="@+id/editUsername"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:src="@mipmap/splash_logo" />
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="125dp"
+        android:layout_alignBottom="@+id/editName"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@mipmap/splash_logo" />
 
     <EditText
-        android:id="@+id/editUsername"
+        android:id="@+id/editName"
+        android:layout_marginBottom="25dp"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
-        android:layout_alignLeft="@+id/editPassword"
-        android:layout_alignStart="@+id/editPassword"
-        android:layout_centerVertical="true"
         android:background="#11000000"
-        android:drawableLeft="@drawable/ic_user"
         android:ems="10"
-        android:hint="username"
+        android:inputType="textPersonName"
+        android:drawableLeft="@drawable/ic_sort_by_alpha_white_24dp"
+        android:hint=" Name" />
+
+    <EditText
+        android:id="@+id/editAge"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:layout_height="40dp"
+        android:background="#11000000"
+        android:drawableLeft="@drawable/ic_cake_white_24dp"
+        android:ems="10"
+        android:hint=" Age"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editCountry"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:layout_height="40dp"
+        android:background="#11000000"
+        android:drawableLeft="@drawable/ic_flag_white_24dp"
+        android:ems="10"
+        android:hint=" Country"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editEmailID"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="#11000000"
+        android:drawableLeft="@drawable/ic_email_white_24dp"
+        android:ems="10"
+        android:hint=" Email ID"
         android:inputType="textPersonName"
         android:textColor="@color/white" />
 
     <TextView
         android:id="@+id/textUsernameAlreadyExists"
         android:layout_width="wrap_content"
+        android:layout_marginBottom="25dp"
         android:layout_height="12dp"
-        android:layout_alignEnd="@+id/textPasswordDoNotMatch"
-        android:layout_alignRight="@+id/textPasswordDoNotMatch"
-        android:layout_below="@+id/editUsername"
-        android:text="username already exists"
+        android:text="Email ID already registered"
         android:textSize="10sp" />
 
     <EditText
         android:id="@+id/editPassword"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
-        android:layout_below="@+id/editUsername"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="26dp"
+        android:layout_marginBottom="25dp"
         android:background="#11000000"
-        android:drawableLeft="@drawable/ic_password"
+        android:drawableLeft="@drawable/ic_lock_white_24dp"
         android:ems="10"
-        android:hint="password"
+        android:hint=" Password"
         android:inputType="textPassword"
         android:textColor="@color/white" />
 
@@ -58,13 +85,10 @@
         android:id="@+id/editConfirmPassword"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
-        android:layout_below="@+id/editPassword"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="26dp"
         android:background="#11000000"
-        android:drawableLeft="@drawable/ic_open_lock"
+        android:drawableLeft="@drawable/ic_lock_outline_white_24dp"
         android:ems="10"
-        android:hint="confirm password"
+        android:hint=" Confirm Password"
         android:inputType="textPassword"
         android:textColor="@color/white" />
 
@@ -72,17 +96,13 @@
         android:id="@+id/textPasswordDoNotMatch"
         android:layout_width="wrap_content"
         android:layout_height="12dp"
-        android:textSize="10sp"
-        android:layout_below="@+id/editConfirmPassword"
-        android:layout_centerHorizontal="true"
-        android:text="passwords do not match" />
+        android:text="Passwords do not match"
+        android:textSize="10sp" />
 
     <android.support.v7.widget.CardView
         android:id="@+id/cardLogin"
         android:layout_width="250dp"
         android:layout_height="45dp"
-        android:layout_below="@+id/editConfirmPassword"
-        android:layout_centerHorizontal="true"
         android:layout_marginTop="45dp"
         app:cardBackgroundColor="@color/logoColor"
         app:cardCornerRadius="25dp">
@@ -108,6 +128,4 @@
     </android.support.v7.widget.CardView>
 
 
-
-
-</RelativeLayout>
+</LinearLayout>

@@ -8,6 +8,9 @@
     <color name="black">#000000</color>
     <color name="logoColor">#2ee8c8</color>
     <color name="transparent">#80000000</color>
-
-
+    <color name="primaryDark">#292b3d</color>
+    <color name="graylight">#fafafa</color>
+    <color name="startblue">#09c6df</color>
+    <color name="endblue">#0bcce6</color>
+    <color name="dialog">#454656</color>
 </resources>
