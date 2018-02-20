@@ -8,7 +8,7 @@
 
 
     <ImageView
-        android:id="@+id/imageLoginScreenLogo"
+        android:id="@+id/imageRegisterScreenLogo"
         android:layout_width="400dp"
         android:layout_height="400dp"
         android:layout_above="@+id/editUsername"
@@ -27,12 +27,21 @@
         android:drawableLeft="@drawable/ic_user"
         android:ems="10"
         android:hint="username"
-        android:textColor="@color/white"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/textUsernameAlreadyExists"
+        android:layout_width="wrap_content"
+        android:layout_height="12dp"
+        android:layout_alignEnd="@+id/textPasswordDoNotMatch"
+        android:layout_alignRight="@+id/textPasswordDoNotMatch"
+        android:layout_below="@+id/editUsername"
+        android:text="username already exists"
+        android:textSize="10sp" />
 
     <EditText
         android:id="@+id/editPassword"
-        android:textColor="@color/white"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
         android:layout_below="@+id/editUsername"
@@ -42,13 +51,37 @@
         android:drawableLeft="@drawable/ic_password"
         android:ems="10"
         android:hint="password"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:textColor="@color/white" />
+
+    <EditText
+        android:id="@+id/editConfirmPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/editPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:background="#11000000"
+        android:drawableLeft="@drawable/ic_open_lock"
+        android:ems="10"
+        android:hint="confirm password"
+        android:inputType="textPassword"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/textPasswordDoNotMatch"
+        android:layout_width="wrap_content"
+        android:layout_height="12dp"
+        android:textSize="10sp"
+        android:layout_below="@+id/editConfirmPassword"
+        android:layout_centerHorizontal="true"
+        android:text="passwords do not match" />
 
     <android.support.v7.widget.CardView
         android:id="@+id/cardLogin"
         android:layout_width="250dp"
         android:layout_height="45dp"
-        android:layout_below="@+id/editPassword"
+        android:layout_below="@+id/editConfirmPassword"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="45dp"
         app:cardBackgroundColor="@color/logoColor"
@@ -57,11 +90,9 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_alignLeft="@+id/cardView"
-            android:layout_alignStart="@+id/login"
-            android:layout_alignTop="@+id/login"
-            android:layout_marginLeft="12dp"
-            android:layout_marginStart="12dp">
+            android:layout_alignLeft="@+id/cardLogin"
+            android:layout_alignStart="@+id/cardLogin"
+            android:layout_alignTop="@+id/cardLogin">
 
             <TextView
                 android:id="@+id/textLogin"
@@ -69,20 +100,14 @@
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
-                android:text="Login"
+                android:text="Register"
                 android:textColor="#FF000000"
                 android:textSize="25dp" />
 
         </RelativeLayout>
     </android.support.v7.widget.CardView>
 
-    <TextView
-        android:id="@+id/textRegister"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/cardLogin"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="18dp"
-        android:text="new user? register" />
+
+
 
 </RelativeLayout>

@@ -22,6 +22,8 @@
         <activity
             android:name=".MainActivity"
             android:label="@string/title_activity_main" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".RulesActivity"></activity>
     </application>
 
 </manifest>
