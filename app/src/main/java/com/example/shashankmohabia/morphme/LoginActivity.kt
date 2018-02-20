@@ -3,9 +3,7 @@ package com.example.shashankmohabia.morphme
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.support.v7.widget.CardView
 import android.view.View
-import android.widget.TextView
 import kotlinx.android.synthetic.main.activity_login.*
 
 class LoginActivity : AppCompatActivity() {
@@ -21,7 +19,7 @@ class LoginActivity : AppCompatActivity() {
         })
 
         cardLogin.setOnClickListener(View.OnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, RulesActivity::class.java)
             startActivity(intent)
             finish()
         })
