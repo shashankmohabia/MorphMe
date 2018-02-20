@@ -2,17 +2,17 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/navigation_home"
+        android:id="@+id/profile"
         android:icon="@drawable/ic_user"
         android:title="Profile" />
 
     <item
-        android:id="@+id/navigation_dashboard"
+        android:id="@+id/dashboard"
         android:icon="@drawable/ic_dashboard_black_24dp"
         android:title="@string/title_dashboard" />
 
     <item
-        android:id="@+id/navigation_notifications"
+        android:id="@+id/logout"
         android:icon="@drawable/ic_password"
         android:title="Logout" />
 

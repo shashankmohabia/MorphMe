@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@mipmap/slider_background"
     tools:context="com.example.shashankmohabia.morphme.LoginActivity">
 
 
@@ -83,6 +84,6 @@
         android:layout_below="@+id/cardLogin"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="18dp"
-        android:text="new user? register" />
+        android:text="new user? SignUp" />
 
 </RelativeLayout>
