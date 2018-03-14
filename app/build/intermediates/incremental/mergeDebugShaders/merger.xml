@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="S:\DevD\MorphMe\app\src\main\shaders"/></dataSet><dataSet config="debug"><source path="S:\DevD\MorphMe\app\src\debug\shaders"/></dataSet></merger>
