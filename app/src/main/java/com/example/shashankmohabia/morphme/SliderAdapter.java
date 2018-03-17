@@ -1,7 +1,6 @@
 package com.example.shashankmohabia.morphme;
 
 import android.content.Context;
-import android.media.Image;
 import android.support.v4.view.PagerAdapter;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,10 +8,6 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-
-import com.example.shashankmohabia.morphme.R;
-
-import java.util.concurrent.TimeoutException;
 
 /**
  * Created by Shashank Mohabia on 2/20/2018.
@@ -35,9 +30,9 @@ public class SliderAdapter extends PagerAdapter {
     };
 
     public String[] slider_headings = {
-            "Eat",
-            "Sleep",
-            "Code"
+            "Rule 1",
+            "Rule 2",
+            "Rule 3"
     };
 
 
@@ -61,7 +56,7 @@ public class SliderAdapter extends PagerAdapter {
     @Override
     public Object instantiateItem(ViewGroup container, int position) {
         layoutInflater = (LayoutInflater) context.getSystemService(context.LAYOUT_INFLATER_SERVICE);
-        View view = layoutInflater.inflate(R.layout.slider_template, container, false);
+        View view = layoutInflater.inflate(R.layout.rules_template, container, false);
 
 
         ImageView slideImageView = (ImageView) view.findViewById(R.id.sliderImageView);

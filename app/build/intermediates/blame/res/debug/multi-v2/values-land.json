@@ -4,17 +4,7 @@
             "outputFile": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-land\\values-land.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Shashank Mohabia\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\72b104f80d0581c7defa00efe6903900\\res\\values-land\\values-land.xml",
-                    "from": {
-                        "startLines": "2,3,4,5",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "55,125,189,260",
-                        "endColumns": "69,63,70,67",
-                        "endOffsets": "120,184,255,323"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Shashank Mohabia\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.1.0.aar\\76686844bf2572d8df389e8e73906759\\res\\values-land\\values-land.xml",
+                    "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.1.0.aar\\4f80cc0971016bf52bc8a05e71244d73\\res\\values-land\\values-land.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -30,6 +20,16 @@
                         "endLines": "9",
                         "endColumns": "12",
                         "endOffsets": "505"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\fc3106938fbc83d5d885a19537f74de3\\res\\values-land\\values-land.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,125,189,260",
+                        "endColumns": "69,63,70,67",
+                        "endOffsets": "120,184,255,323"
                     }
                 }
             ]

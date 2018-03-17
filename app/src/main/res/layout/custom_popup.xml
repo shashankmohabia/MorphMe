@@ -16,8 +16,8 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:gravity="center"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:gravity="center">
 
         <Button
             android:id="@+id/noButton"
@@ -29,8 +29,8 @@
         <Button
             android:id="@+id/yesButton"
             android:layout_width="wrap_content"
-            android:layout_toRightOf="@+id/noButton"
             android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/noButton"
             android:background="@android:color/transparent"
             android:text="yes" />
     </RelativeLayout>

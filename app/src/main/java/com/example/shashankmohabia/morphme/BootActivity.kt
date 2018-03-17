@@ -6,9 +6,11 @@ import android.os.Bundle
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import android.widget.ImageView
+import com.google.firebase.auth.FirebaseAuth
 import java.lang.Thread.sleep
 
 class BootActivity : AppCompatActivity() {
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -20,7 +22,7 @@ class BootActivity : AppCompatActivity() {
         val intent = Intent(this, LoginActivity::class.java)
         Thread {
             try {
-                sleep(5000);
+                sleep(3000);
             } catch (e: InterruptedException) {
                 e.printStackTrace();
             } finally {

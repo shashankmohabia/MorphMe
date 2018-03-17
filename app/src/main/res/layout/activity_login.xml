@@ -12,45 +12,55 @@
         android:id="@+id/imageLoginScreenLogo"
         android:layout_width="400dp"
         android:layout_height="400dp"
-        android:layout_above="@+id/editEmailID"
+        android:layout_above="@+id/loginEmailID"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:src="@mipmap/splash_logo"
-        android:contentDescription="Logo" />
+        android:contentDescription="Logo"
+        android:src="@mipmap/splash_logo" />
+
+    <TextView
+        android:id="@+id/loginError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/loginEmailID"
+        android:layout_centerHorizontal="true"
+        android:text="incorrect username or password"
+        android:textColor="@color/error"
+        android:visibility="invisible" />
 
     <EditText
-        android:id="@+id/editEmailID"
+        android:id="@+id/loginEmailID"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
-        android:layout_alignLeft="@+id/editPassword"
-        android:layout_alignStart="@+id/editPassword"
+        android:layout_alignLeft="@+id/loginPassword"
+        android:layout_alignStart="@+id/loginPassword"
         android:layout_centerVertical="true"
         android:background="#11000000"
         android:drawableLeft="@drawable/ic_user"
         android:ems="10"
         android:hint="username"
-        android:textColor="@color/white"
-        android:inputType="textEmailAddress" />
+        android:inputType="textEmailAddress"
+        android:textColor="@color/white" />
 
     <EditText
-        android:id="@+id/editPassword"
-        android:textColor="@color/white"
+        android:id="@+id/loginPassword"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
-        android:layout_below="@+id/editEmailID"
+        android:layout_below="@+id/loginEmailID"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="26dp"
         android:background="#11000000"
         android:drawableLeft="@drawable/ic_password"
         android:ems="10"
         android:hint="password"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:textColor="@color/white" />
 
     <android.support.v7.widget.CardView
         android:id="@+id/cardLogin"
         android:layout_width="250dp"
         android:layout_height="45dp"
-        android:layout_below="@+id/editPassword"
+        android:layout_below="@+id/loginPassword"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="45dp"
         app:cardBackgroundColor="@color/logoColor"
@@ -86,5 +96,6 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="18dp"
         android:text="new user? SignUp" />
+
 
 </RelativeLayout>

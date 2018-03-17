@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "232573017534",
+    "firebase_url": "https://morphme-b4464.firebaseio.com",
+    "project_id": "morphme-b4464",
+    "storage_bucket": "morphme-b4464.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:232573017534:android:bf3f10ca1c3e9799",
+        "android_client_info": {
+          "package_name": "com.example.shashankmohabia.morphme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "232573017534-1ncv4858t4tvifpiv71bk3rsdak3fho7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4GQ0igpgxuq6NNUlV3v7gjflWhNzWKh0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
