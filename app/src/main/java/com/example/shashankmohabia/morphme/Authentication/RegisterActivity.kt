@@ -47,8 +47,6 @@ class RegisterActivity : AppCompatActivity() {
                         userInfo.put("country", editCountry.text.toString())
                         userInfo.put("profileImageDownloadUri", "default")
                         dbRefer.updateChildren(userInfo)
-
-                        Toast.makeText(this, "Done", Toast.LENGTH_SHORT).show()
                     }
                 })
             } else {

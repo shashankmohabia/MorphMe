@@ -211,6 +211,7 @@
     <orderEntry type="library" name="com.google.firebase:firebase-analytics-license-11.8.0" level="project" />
     <orderEntry type="library" name="com.android.support:support-v4-27.1.0" level="project" />
     <orderEntry type="library" name="com.google.firebase:firebase-analytics-impl-license-11.8.0" level="project" />
+    <orderEntry type="library" name="com.github.bumptech.glide:glide:3.7.0@jar" level="project" />
     <orderEntry type="library" name="android.arch.core:runtime-1.1.0" level="project" />
     <orderEntry type="library" name="com.google.android.gms:play-services-tasks-license-11.8.0" level="project" />
   </component>
