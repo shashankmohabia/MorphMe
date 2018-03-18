@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import android.widget.ImageView
-import com.google.firebase.auth.FirebaseAuth
+import com.example.shashankmohabia.morphme.Authentication.LoginActivity
 import java.lang.Thread.sleep
 
 class BootActivity : AppCompatActivity() {

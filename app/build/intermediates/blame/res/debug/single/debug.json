@@ -24,12 +24,12 @@
         "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.1.0.aar\\4f80cc0971016bf52bc8a05e71244d73\\res\\anim-v21\\design_bottom_sheet_slide_in.xml"
     },
     {
-        "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_text_select_handle_middle_mtrl_light.png.flat",
-        "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\fc3106938fbc83d5d885a19537f74de3\\res\\drawable-xhdpi-v4\\abc_text_select_handle_middle_mtrl_light.png"
-    },
-    {
         "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
         "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\fc3106938fbc83d5d885a19537f74de3\\res\\drawable-xxhdpi-v4\\abc_popup_background_mtrl_mult.9.png"
+    },
+    {
+        "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_text_select_handle_middle_mtrl_light.png.flat",
+        "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\fc3106938fbc83d5d885a19537f74de3\\res\\drawable-xhdpi-v4\\abc_text_select_handle_middle_mtrl_light.png"
     },
     {
         "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xxhdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
@@ -248,6 +248,14 @@
         "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\fc3106938fbc83d5d885a19537f74de3\\res\\drawable-xhdpi-v4\\abc_text_select_handle_right_mtrl_dark.png"
     },
     {
+        "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\menu_bottom_navigation.xml.flat",
+        "source": "S:\\DevD\\MorphMe\\app\\src\\main\\res\\menu\\bottom_navigation.xml"
+    },
+    {
+        "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\layout_bb_bottom_bar_item_shifting.xml.flat",
+        "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\bottom-bar-2.3.1.aar\\1236f176a9953eedea457b7795f580ac\\res\\layout\\bb_bottom_bar_item_shifting.xml"
+    },
+    {
         "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_facebook.png.flat",
         "source": "S:\\DevD\\MorphMe\\app\\src\\main\\res\\drawable-v24\\facebook.png"
     },
@@ -388,12 +396,12 @@
         "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.1.0.aar\\4f80cc0971016bf52bc8a05e71244d73\\res\\drawable-xxhdpi-v4\\design_ic_visibility_off.png"
     },
     {
-        "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
-        "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\fc3106938fbc83d5d885a19537f74de3\\res\\drawable-xxxhdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
-    },
-    {
         "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\drawable_common_google_signin_btn_icon_disabled.xml.flat",
         "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.8.0.aar\\a6a62063f8adefa7b284646de8f7be5a\\res\\drawable\\common_google_signin_btn_icon_disabled.xml"
+    },
+    {
+        "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
+        "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\fc3106938fbc83d5d885a19537f74de3\\res\\drawable-xxxhdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
     },
     {
         "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\drawable_notification_icon_background.xml.flat",
@@ -418,10 +426,6 @@
     {
         "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
         "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\fc3106938fbc83d5d885a19537f74de3\\res\\drawable-xxhdpi-v4\\abc_btn_check_to_on_mtrl_015.png"
-    },
-    {
-        "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\anim_tooltip_enter.xml.flat",
-        "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\d17b06213b26074f80aeff1dd31e562f\\res\\anim\\tooltip_enter.xml"
     },
     {
         "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",
@@ -528,6 +532,10 @@
         "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\fc3106938fbc83d5d885a19537f74de3\\res\\drawable-mdpi-v4\\abc_text_select_handle_right_mtrl_dark.png"
     },
     {
+        "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\layout_bb_bottom_bar_item_fixed.xml.flat",
+        "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\bottom-bar-2.3.1.aar\\1236f176a9953eedea457b7795f580ac\\res\\layout\\bb_bottom_bar_item_fixed.xml"
+    },
+    {
         "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
         "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\fc3106938fbc83d5d885a19537f74de3\\res\\drawable-xhdpi-v4\\abc_spinner_mtrl_am_alpha.9.png"
     },
@@ -552,12 +560,12 @@
         "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\fc3106938fbc83d5d885a19537f74de3\\res\\anim\\abc_tooltip_exit.xml"
     },
     {
-        "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
-        "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\fc3106938fbc83d5d885a19537f74de3\\res\\drawable-xhdpi-v4\\abc_btn_check_to_on_mtrl_015.png"
-    },
-    {
         "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_common_google_signin_btn_text_dark_normal_background.9.png.flat",
         "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.8.0.aar\\a6a62063f8adefa7b284646de8f7be5a\\res\\drawable-xhdpi-v4\\common_google_signin_btn_text_dark_normal_background.9.png"
+    },
+    {
+        "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
+        "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\fc3106938fbc83d5d885a19537f74de3\\res\\drawable-xhdpi-v4\\abc_btn_check_to_on_mtrl_015.png"
     },
     {
         "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_login.xml.flat",
@@ -588,6 +596,10 @@
         "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.0.aar\\c347b65392acadf2acfaffc77f22ae68\\res\\drawable-xhdpi-v4\\notify_panel_notification_icon_bg.png"
     },
     {
+        "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\layout_bb_bottom_bar_item_fixed_tablet.xml.flat",
+        "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\bottom-bar-2.3.1.aar\\1236f176a9953eedea457b7795f580ac\\res\\layout\\bb_bottom_bar_item_fixed_tablet.xml"
+    },
+    {
         "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_gradient.xml.flat",
         "source": "S:\\DevD\\MorphMe\\app\\src\\main\\res\\drawable-v24\\gradient.xml"
     },
@@ -616,16 +628,16 @@
         "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\fc3106938fbc83d5d885a19537f74de3\\res\\drawable-mdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
     },
     {
-        "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_bar_view_list_nav_layout.xml.flat",
-        "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\d17b06213b26074f80aeff1dd31e562f\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
-    },
-    {
         "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_list_longpressed_holo.9.png.flat",
         "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\fc3106938fbc83d5d885a19537f74de3\\res\\drawable-mdpi-v4\\abc_list_longpressed_holo.9.png"
     },
     {
         "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_profile_circle.png.flat",
         "source": "S:\\DevD\\MorphMe\\app\\src\\main\\res\\mipmap-hdpi\\profile_circle.png"
+    },
+    {
+        "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\layout_bb_bottom_bar_item_titleless.xml.flat",
+        "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\bottom-bar-2.3.1.aar\\1236f176a9953eedea457b7795f580ac\\res\\layout\\bb_bottom_bar_item_titleless.xml"
     },
     {
         "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_design_ic_visibility.png.flat",
@@ -656,12 +668,12 @@
         "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\fc3106938fbc83d5d885a19537f74de3\\res\\drawable-v21\\abc_btn_colored_material.xml"
     },
     {
-        "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
-        "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\fc3106938fbc83d5d885a19537f74de3\\res\\drawable-xxxhdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png"
-    },
-    {
         "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_tooltip.xml.flat",
         "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\fc3106938fbc83d5d885a19537f74de3\\res\\layout\\abc_tooltip.xml"
+    },
+    {
+        "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
+        "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\fc3106938fbc83d5d885a19537f74de3\\res\\drawable-xxxhdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
         "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\animator-v21_design_appbar_state_list_animator.xml.flat",
@@ -670,6 +682,10 @@
     {
         "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\drawable_notification_tile_bg.xml.flat",
         "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.0.aar\\c347b65392acadf2acfaffc77f22ae68\\res\\drawable\\notification_tile_bg.xml"
+    },
+    {
+        "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\color_bottom_nav_color.xml.flat",
+        "source": "S:\\DevD\\MorphMe\\app\\src\\main\\res\\color\\bottom_nav_color.xml"
     },
     {
         "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
@@ -780,6 +796,10 @@
         "source": "S:\\DevD\\MorphMe\\app\\src\\main\\res\\drawable-hdpi\\ic_open_lock.png"
     },
     {
+        "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_dashboard.xml.flat",
+        "source": "S:\\DevD\\MorphMe\\app\\src\\main\\res\\layout\\fragment_dashboard.xml"
+    },
+    {
         "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\fc3106938fbc83d5d885a19537f74de3\\res\\drawable-xhdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png"
     },
@@ -876,12 +896,12 @@
         "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\fc3106938fbc83d5d885a19537f74de3\\res\\drawable\\abc_ratingbar_small_material.xml"
     },
     {
-        "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ic_voice_search_api_material.xml.flat",
-        "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\fc3106938fbc83d5d885a19537f74de3\\res\\drawable\\abc_ic_voice_search_api_material.xml"
-    },
-    {
         "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_cake_white_24dp.xml.flat",
         "source": "S:\\DevD\\MorphMe\\app\\src\\main\\res\\drawable\\ic_cake_white_24dp.xml"
+    },
+    {
+        "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ic_voice_search_api_material.xml.flat",
+        "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\fc3106938fbc83d5d885a19537f74de3\\res\\drawable\\abc_ic_voice_search_api_material.xml"
     },
     {
         "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_star_black_16dp.png.flat",
@@ -930,6 +950,10 @@
     {
         "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
         "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\fc3106938fbc83d5d885a19537f74de3\\res\\drawable-mdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21_bb_bottom_bar_item_container.xml.flat",
+        "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\bottom-bar-2.3.1.aar\\1236f176a9953eedea457b7795f580ac\\res\\layout-v21\\bb_bottom_bar_item_container.xml"
     },
     {
         "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
@@ -1026,6 +1050,10 @@
     {
         "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_user.png.flat",
         "source": "S:\\DevD\\MorphMe\\app\\src\\main\\res\\drawable-xhdpi\\ic_user.png"
+    },
+    {
+        "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_profile.xml.flat",
+        "source": "S:\\DevD\\MorphMe\\app\\src\\main\\res\\layout\\fragment_profile.xml"
     },
     {
         "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
@@ -1128,12 +1156,12 @@
         "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\fc3106938fbc83d5d885a19537f74de3\\res\\drawable-mdpi-v4\\abc_ic_star_black_36dp.png"
     },
     {
-        "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat",
-        "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\fc3106938fbc83d5d885a19537f74de3\\res\\drawable-xhdpi-v4\\abc_btn_radio_to_on_mtrl_015.png"
-    },
-    {
         "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
         "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\fc3106938fbc83d5d885a19537f74de3\\res\\drawable-mdpi-v4\\abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
+        "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat",
+        "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\fc3106938fbc83d5d885a19537f74de3\\res\\drawable-xhdpi-v4\\abc_btn_radio_to_on_mtrl_015.png"
     },
     {
         "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_star_half_black_16dp.png.flat",
@@ -1184,6 +1212,10 @@
         "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\fc3106938fbc83d5d885a19537f74de3\\res\\drawable-hdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
     },
     {
+        "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_home.xml.flat",
+        "source": "S:\\DevD\\MorphMe\\app\\src\\main\\res\\layout\\fragment_home.xml"
+    },
+    {
         "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_list_focused_holo.9.png.flat",
         "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\fc3106938fbc83d5d885a19537f74de3\\res\\drawable-hdpi-v4\\abc_list_focused_holo.9.png"
     },
@@ -1202,6 +1234,10 @@
     {
         "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_notification_bg_low_pressed.9.png.flat",
         "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.0.aar\\c347b65392acadf2acfaffc77f22ae68\\res\\drawable-mdpi-v4\\notification_bg_low_pressed.9.png"
+    },
+    {
+        "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\layout_bb_bottom_bar_item_container_tablet.xml.flat",
+        "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\bottom-bar-2.3.1.aar\\1236f176a9953eedea457b7795f580ac\\res\\layout\\bb_bottom_bar_item_container_tablet.xml"
     },
     {
         "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_password.png.flat",
@@ -1238,10 +1274,6 @@
     {
         "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_alert_dialog_material.xml.flat",
         "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\fc3106938fbc83d5d885a19537f74de3\\res\\layout\\abc_alert_dialog_material.xml"
-    },
-    {
-        "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\color-v11_abc_background_cache_hint_selector_material_light.xml.flat",
-        "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\d17b06213b26074f80aeff1dd31e562f\\res\\color-v11\\abc_background_cache_hint_selector_material_light.xml"
     },
     {
         "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_notification_bg_normal.9.png.flat",
@@ -1436,16 +1468,16 @@
         "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.1.0.aar\\4f80cc0971016bf52bc8a05e71244d73\\res\\anim\\design_bottom_sheet_slide_out.xml"
     },
     {
+        "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_common_google_signin_btn_text_dark_normal_background.9.png.flat",
+        "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.8.0.aar\\a6a62063f8adefa7b284646de8f7be5a\\res\\drawable-mdpi-v4\\common_google_signin_btn_text_dark_normal_background.9.png"
+    },
+    {
         "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\fc3106938fbc83d5d885a19537f74de3\\res\\drawable-hdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png"
     },
     {
         "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
         "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\fc3106938fbc83d5d885a19537f74de3\\res\\drawable-xxxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
-    },
-    {
-        "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_common_google_signin_btn_text_dark_normal_background.9.png.flat",
-        "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.8.0.aar\\a6a62063f8adefa7b284646de8f7be5a\\res\\drawable-mdpi-v4\\common_google_signin_btn_text_dark_normal_background.9.png"
     },
     {
         "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_rules.xml.flat",
@@ -1552,12 +1584,12 @@
         "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\fc3106938fbc83d5d885a19537f74de3\\res\\drawable-ldrtl-mdpi-v17\\abc_spinner_mtrl_am_alpha.9.png"
     },
     {
-        "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_list_selector_background_transition_holo_light.xml.flat",
-        "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\fc3106938fbc83d5d885a19537f74de3\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
-    },
-    {
         "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_media_cancel_action.xml.flat",
         "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-27.1.0.aar\\10c1a49fc283ecfad6ed126331cc7e7f\\res\\layout\\notification_media_cancel_action.xml"
+    },
+    {
+        "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_list_selector_background_transition_holo_light.xml.flat",
+        "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\fc3106938fbc83d5d885a19537f74de3\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
     },
     {
         "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_common_google_signin_btn_icon_light_normal_background.9.png.flat",
@@ -1602,6 +1634,10 @@
     {
         "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_icon_group.xml.flat",
         "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.0.aar\\c347b65392acadf2acfaffc77f22ae68\\res\\layout\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_notification.xml.flat",
+        "source": "S:\\DevD\\MorphMe\\app\\src\\main\\res\\layout\\fragment_notification.xml"
     },
     {
         "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_notification_action_background.xml.flat",
@@ -1664,12 +1700,12 @@
         "source": "S:\\DevD\\MorphMe\\app\\src\\main\\res\\drawable\\ic_notifications_black_24dp.xml"
     },
     {
-        "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_soup.png.flat",
-        "source": "S:\\DevD\\MorphMe\\app\\src\\main\\res\\mipmap-hdpi\\soup.png"
-    },
-    {
         "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\drawable_common_google_signin_btn_icon_dark_normal.xml.flat",
         "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.8.0.aar\\a6a62063f8adefa7b284646de8f7be5a\\res\\drawable\\common_google_signin_btn_icon_dark_normal.xml"
+    },
+    {
+        "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_soup.png.flat",
+        "source": "S:\\DevD\\MorphMe\\app\\src\\main\\res\\mipmap-hdpi\\soup.png"
     },
     {
         "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ratingbar_material.xml.flat",
@@ -1700,12 +1736,12 @@
         "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\fc3106938fbc83d5d885a19537f74de3\\res\\drawable-xxhdpi-v4\\abc_spinner_mtrl_am_alpha.9.png"
     },
     {
-        "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_text_input_password_icon.xml.flat",
-        "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.1.0.aar\\4f80cc0971016bf52bc8a05e71244d73\\res\\layout\\design_text_input_password_icon.xml"
-    },
-    {
         "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\layout-watch-v20_abc_alert_dialog_button_bar_material.xml.flat",
         "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\fc3106938fbc83d5d885a19537f74de3\\res\\layout-watch-v20\\abc_alert_dialog_button_bar_material.xml"
+    },
+    {
+        "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_text_input_password_icon.xml.flat",
+        "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.1.0.aar\\4f80cc0971016bf52bc8a05e71244d73\\res\\layout\\design_text_input_password_icon.xml"
     },
     {
         "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_common_google_signin_btn_icon_light_normal_background.9.png.flat",
@@ -1726,10 +1762,6 @@
     {
         "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_star_black_36dp.png.flat",
         "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\fc3106938fbc83d5d885a19537f74de3\\res\\drawable-xxhdpi-v4\\abc_ic_star_black_36dp.png"
-    },
-    {
-        "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\anim_tooltip_exit.xml.flat",
-        "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\d17b06213b26074f80aeff1dd31e562f\\res\\anim\\tooltip_exit.xml"
     },
     {
         "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_background_cache_hint_selector_material_light.xml.flat",
@@ -1764,12 +1796,12 @@
         "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\fc3106938fbc83d5d885a19537f74de3\\res\\anim\\abc_slide_in_bottom.xml"
     },
     {
-        "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_owl.png.flat",
-        "source": "S:\\DevD\\MorphMe\\app\\src\\main\\res\\mipmap-hdpi\\owl.png"
-    },
-    {
         "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\drawable-watch-v20_abc_dialog_material_background.xml.flat",
         "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\fc3106938fbc83d5d885a19537f74de3\\res\\drawable-watch-v20\\abc_dialog_material_background.xml"
+    },
+    {
+        "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_owl.png.flat",
+        "source": "S:\\DevD\\MorphMe\\app\\src\\main\\res\\mipmap-hdpi\\owl.png"
     },
     {
         "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_star_half_black_36dp.png.flat",
@@ -1840,12 +1872,12 @@
         "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\fc3106938fbc83d5d885a19537f74de3\\res\\drawable-xxhdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png"
     },
     {
-        "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
-        "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\fc3106938fbc83d5d885a19537f74de3\\res\\drawable-mdpi-v4\\abc_ic_menu_share_mtrl_alpha.png"
-    },
-    {
         "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_googleg_standard_color_18.png.flat",
         "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.8.0.aar\\a6a62063f8adefa7b284646de8f7be5a\\res\\drawable-xhdpi-v4\\googleg_standard_color_18.png"
+    },
+    {
+        "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\fc3106938fbc83d5d885a19537f74de3\\res\\drawable-mdpi-v4\\abc_ic_menu_share_mtrl_alpha.png"
     },
     {
         "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_list_focused_holo.9.png.flat",
@@ -1866,6 +1898,10 @@
     {
         "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_lines_media.xml.flat",
         "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-27.1.0.aar\\10c1a49fc283ecfad6ed126331cc7e7f\\res\\layout\\notification_template_lines_media.xml"
+    },
+    {
+        "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\layout_bb_bottom_bar_item_container.xml.flat",
+        "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\bottom-bar-2.3.1.aar\\1236f176a9953eedea457b7795f580ac\\res\\layout\\bb_bottom_bar_item_container.xml"
     },
     {
         "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_list_selector_disabled_holo_dark.9.png.flat",
@@ -1904,6 +1940,10 @@
         "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\fc3106938fbc83d5d885a19537f74de3\\res\\drawable-hdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
     },
     {
+        "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bb_bottom_bar_top_shadow.xml.flat",
+        "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\bottom-bar-2.3.1.aar\\1236f176a9953eedea457b7795f580ac\\res\\drawable\\bb_bottom_bar_top_shadow.xml"
+    },
+    {
         "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_common_full_open_on_phone.png.flat",
         "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.8.0.aar\\a6a62063f8adefa7b284646de8f7be5a\\res\\drawable-xhdpi-v4\\common_full_open_on_phone.png"
     },
@@ -1938,10 +1978,6 @@
     {
         "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_seekbar_thumb_material.xml.flat",
         "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\fc3106938fbc83d5d885a19537f74de3\\res\\drawable\\abc_seekbar_thumb_material.xml"
-    },
-    {
-        "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\color-v11_abc_background_cache_hint_selector_material_dark.xml.flat",
-        "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\d17b06213b26074f80aeff1dd31e562f\\res\\color-v11\\abc_background_cache_hint_selector_material_dark.xml"
     },
     {
         "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_sort_by_alpha_white_24dp.xml.flat",
@@ -2054,10 +2090,6 @@
     {
         "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\layout-v16_notification_template_custom_big.xml.flat",
         "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.0.aar\\c347b65392acadf2acfaffc77f22ae68\\res\\layout-v16\\notification_template_custom_big.xml"
-    },
-    {
-        "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\layout_tooltip.xml.flat",
-        "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\d17b06213b26074f80aeff1dd31e562f\\res\\layout\\tooltip.xml"
     },
     {
         "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_notification_bg_low_normal.9.png.flat",
@@ -2188,12 +2220,12 @@
         "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\fc3106938fbc83d5d885a19537f74de3\\res\\drawable-xhdpi-v4\\abc_list_divider_mtrl_alpha.9.png"
     },
     {
-        "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_star_half_black_48dp.png.flat",
-        "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\fc3106938fbc83d5d885a19537f74de3\\res\\drawable-xxxhdpi-v4\\abc_ic_star_half_black_48dp.png"
-    },
-    {
         "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_common_google_signin_btn_text_dark_normal_background.9.png.flat",
         "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.8.0.aar\\a6a62063f8adefa7b284646de8f7be5a\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_text_dark_normal_background.9.png"
+    },
+    {
+        "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_star_half_black_48dp.png.flat",
+        "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\fc3106938fbc83d5d885a19537f74de3\\res\\drawable-xxxhdpi-v4\\abc_ic_star_half_black_48dp.png"
     },
     {
         "merged": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\res\\merged\\debug\\drawable_tooltip_frame_dark.xml.flat",

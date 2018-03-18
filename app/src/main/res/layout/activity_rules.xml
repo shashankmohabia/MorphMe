@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@mipmap/slider_background"
-    tools:context="com.example.shashankmohabia.morphme.RulesActivity">
+    tools:context="com.example.shashankmohabia.morphme.Rules.RulesActivity">
 
     <android.support.v4.view.ViewPager
         android:id="@+id/sliderMain"
@@ -25,7 +25,6 @@
         android:orientation="horizontal"></LinearLayout>
 
 
-
     <Button
         android:id="@+id/nextButton"
         android:layout_width="wrap_content"
@@ -35,6 +34,6 @@
         android:layout_alignParentRight="true"
         android:background="@android:color/transparent"
         android:text="next"
-        android:visibility="invisible"/>
+        android:visibility="invisible" />
 
 </RelativeLayout>

@@ -9,7 +9,7 @@
     android:gravity="center"
     android:orientation="vertical"
 
-    tools:context="com.example.shashankmohabia.morphme.LoginActivity">
+    tools:context="com.example.shashankmohabia.morphme.Authentication.LoginActivity">
 
     <ImageView
         android:id="@+id/imageView"

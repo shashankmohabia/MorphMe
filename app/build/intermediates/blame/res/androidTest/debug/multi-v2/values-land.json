@@ -14,12 +14,22 @@
                         "endOffsets": "232"
                     },
                     "to": {
-                        "startLines": "6",
+                        "startLines": "7",
                         "startColumns": "4",
-                        "startOffsets": "328",
-                        "endLines": "9",
+                        "startOffsets": "389",
+                        "endLines": "10",
                         "endColumns": "12",
-                        "endOffsets": "505"
+                        "endOffsets": "566"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\bottom-bar-2.3.1.aar\\1236f176a9953eedea457b7795f580ac\\res\\values-land\\values-land.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "60",
+                        "endOffsets": "111"
                     }
                 },
                 {
@@ -30,6 +40,13 @@
                         "startOffsets": "55,125,189,260",
                         "endColumns": "69,63,70,67",
                         "endOffsets": "120,184,255,323"
+                    },
+                    "to": {
+                        "startLines": "3,4,5,6",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "116,186,250,321",
+                        "endColumns": "69,63,70,67",
+                        "endOffsets": "181,245,316,384"
                     }
                 }
             ]
