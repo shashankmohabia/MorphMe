@@ -2,12 +2,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="com.example.shashankmohabia.morphme.MainGame.Fragments.ProfileFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <com.lorentzos.flingswipe.SwipeFlingAdapterView
+        android:id="@+id/swingView"
+        android:background="#ffeee9e2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Home" />
+        app:rotation_degrees="15.5"
+        tools:context=".MyActivity" />
 
 </FrameLayout>

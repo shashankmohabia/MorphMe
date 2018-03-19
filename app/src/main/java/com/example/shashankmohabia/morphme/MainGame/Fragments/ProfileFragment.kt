@@ -50,6 +50,8 @@ class ProfileFragment : Fragment() {
 
 
     private fun getUserInfo() {
+
+        //mUserDb.addValueEventListener(ob)
         mUserDb.addListenerForSingleValueEvent(object : ValueEventListener {
             override fun onDataChange(dataSnapshot: DataSnapshot) {
                 if (dataSnapshot.exists() && dataSnapshot.childrenCount > 0) {
