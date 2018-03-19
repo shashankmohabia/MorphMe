@@ -1,5 +1,6 @@
 package com.example.shashankmohabia.morphme.MainGame.Fragments
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.util.Log
@@ -8,9 +9,13 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.Toast
+import com.example.shashankmohabia.morphme.Authentication.LoginActivity
 import com.example.shashankmohabia.morphme.R
+import com.google.firebase.auth.FirebaseAuth
 import com.lorentzos.flingswipe.SwipeFlingAdapterView
 import kotlinx.android.synthetic.main.fragment_home.*
+import org.jetbrains.anko.alert
+import org.jetbrains.anko.support.v4.alert
 import java.util.ArrayList
 
 class HomeFragment : Fragment() {
@@ -38,7 +43,7 @@ class HomeFragment : Fragment() {
         al?.add("css")
         al?.add("javascript")
 
-        arrayAdapter = ArrayAdapter(view?.context, R.layout.swing_item, R.id.helloText, al)
+        arrayAdapter = ArrayAdapter(view.context, R.layout.swing_item, R.id.helloText, al)
 
 
         swingView?.setAdapter(arrayAdapter)
@@ -51,11 +56,19 @@ class HomeFragment : Fragment() {
             }
 
             override fun onLeftCardExit(dataObject: Any) {
-                Toast.makeText(view?.context, "Left", Toast.LENGTH_LONG).show()
+                alert("Are you sure it is fake?") {
+                    title = "Fake"
+                    positiveButton("Yes") {}
+                    negativeButton("No") { }
+                }.show()
             }
 
             override fun onRightCardExit(dataObject: Any) {
-                Toast.makeText(view?.context, "Right", Toast.LENGTH_LONG).show()
+                alert("Are you sure it is not fake?") {
+                    title = " Not Fake"
+                    positiveButton("Yes") {}
+                    negativeButton("No") { }
+                }.show()
             }
 
             override fun onAdapterAboutToEmpty(itemsInAdapter: Int) {}
