@@ -1,7 +1,6 @@
-package com.example.shashankmohabia.morphme.MainGame.Fragments
+package com.example.shashankmohabia.morphme.MainGame.Fragments.AdminFragments
 
-import android.content.Context
-import android.net.Uri
+import android.content.Intent
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.view.LayoutInflater
@@ -9,27 +8,26 @@ import android.view.View
 import android.view.ViewGroup
 
 import com.example.shashankmohabia.morphme.R
+import kotlinx.android.synthetic.main.fragment_admin.*
 
-/**
- * A simple [Fragment] subclass.
- * Activities that contain this fragment must implement the
- * [AdminFragment.OnFragmentInteractionListener] interface
- * to handle interaction events.
- * Use the [AdminFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class AdminFragment : Fragment() {
 
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
-        // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_admin, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        allUsers.setOnClickListener(View.OnClickListener {
+            val fragment2 = AllUsersFragment()
+            val fragmentManager = fragmentManager
+            val fragmentTransaction = fragmentManager!!.beginTransaction()
+            fragmentTransaction.replace(R.id.mainFrame, fragment2)
+            fragmentTransaction.addToBackStack(null)
+            fragmentTransaction.commit()
+        })
     }
-
-
-}// Required empty public constructor
+}

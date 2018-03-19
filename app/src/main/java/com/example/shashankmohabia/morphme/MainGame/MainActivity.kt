@@ -4,9 +4,8 @@ import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v4.app.Fragment
-import com.bumptech.glide.Glide
 import com.example.shashankmohabia.morphme.Authentication.LoginActivity
-import com.example.shashankmohabia.morphme.MainGame.Fragments.AdminFragment
+import com.example.shashankmohabia.morphme.MainGame.Fragments.AdminFragments.AdminFragment
 import com.example.shashankmohabia.morphme.MainGame.Fragments.DashBoardFragment
 import com.example.shashankmohabia.morphme.MainGame.Fragments.HomeFragment
 import com.example.shashankmohabia.morphme.MainGame.Fragments.ProfileFragment
@@ -14,7 +13,6 @@ import com.example.shashankmohabia.morphme.R
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.fragment_profile.*
 import org.jetbrains.anko.alert
 
 
