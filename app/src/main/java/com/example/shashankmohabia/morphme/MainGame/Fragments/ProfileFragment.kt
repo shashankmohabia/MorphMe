@@ -35,20 +35,19 @@ class ProfileFragment : Fragment() {
     private var userId: String? = null
     private var resultURI: Uri? = null
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
-
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
+
+        return inflater.inflate(R.layout.fragment_profile, container, false)
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
         userId = mAuth.currentUser!!.uid
         mUserDb = mUserDb.child("Users").child(userId)
 
         getUserInfo()
-        return inflater.inflate(R.layout.fragment_profile, container, false)
     }
-
-
     private fun getUserInfo() {
 
         //mUserDb.addValueEventListener(ob)
