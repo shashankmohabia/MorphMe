@@ -65,8 +65,7 @@ class MainActivity : AppCompatActivity() {
                 }
                 return@setOnNavigationItemSelectedListener false
             }
-        }
-        else{
+        } else {
             bottonNavBar.inflateMenu(R.menu.bottom_navigation_admin)
             bottonNavBar.selectedItemId = R.id.home
             startFragmentTransaction(HomeFragment())
@@ -119,6 +118,7 @@ class MainActivity : AppCompatActivity() {
 
                 }
             }
+
             override fun onCancelled(databaseError: DatabaseError) {
             }
         })

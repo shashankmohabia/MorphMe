@@ -11,6 +11,7 @@
 
     tools:context="com.example.shashankmohabia.morphme.Authentication.LoginActivity">
 
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
