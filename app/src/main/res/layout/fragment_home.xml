@@ -1,16 +1,29 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="com.example.shashankmohabia.morphme.MainGame.Fragments.ProfileFragment">
 
-    <com.lorentzos.flingswipe.SwipeFlingAdapterView
-        android:id="@+id/swingView"
-        android:background="#ffeee9e2"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:rotation_degrees="15.5"
-        tools:context=".MyActivity" />
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="This is the progress bar"
+            android:layout_height="50dp"
+            android:gravity="center"/>
+
+        <com.lorentzos.flingswipe.SwipeFlingAdapterView
+            android:id="@+id/swingView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ffeee9e2"
+            app:rotation_degrees="15.5"
+            tools:context=".MyActivity" />
+    </LinearLayout>
 
 </FrameLayout>

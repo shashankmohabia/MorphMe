@@ -19,16 +19,16 @@
             android:orientation="vertical">
 
             <ImageView
+                android:id="@+id/profilePic"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="45dp"
-                app:srcCompat="@mipmap/user"
-                android:id="@+id/profilePic"/>
+                app:srcCompat="@mipmap/user_male" />
 
             <TextView
-                android:layout_width="wrap_content"
                 android:id="@+id/name"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="10dp"
@@ -128,11 +128,11 @@
                 app:srcCompat="@drawable/ic_cake_blue_24dp" />
 
             <TextView
+                android:id="@+id/age"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:paddingLeft="20dp"
-                android:id="@+id/age"
                 android:textColor="@color/primaryDark" />
         </LinearLayout>
 
@@ -147,11 +147,11 @@
                 app:srcCompat="@drawable/ic_people_blue_24dp" />
 
             <TextView
+                android:id="@+id/gender"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:paddingLeft="20dp"
-                android:text="Male"
                 android:textColor="@color/primaryDark" />
         </LinearLayout>
 
@@ -166,11 +166,11 @@
                 app:srcCompat="@drawable/ic_flag_blue_24dp" />
 
             <TextView
+                android:id="@+id/country"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:paddingLeft="20dp"
-                android:id="@+id/country"
                 android:textColor="@color/primaryDark" />
         </LinearLayout>
 
@@ -185,11 +185,11 @@
                 app:srcCompat="@drawable/ic_email_blue_24dp" />
 
             <TextView
+                android:id="@+id/email"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:paddingLeft="20dp"
-                android:id="@+id/email"
                 android:textColor="@color/primaryDark" />
         </LinearLayout>
     </LinearLayout>

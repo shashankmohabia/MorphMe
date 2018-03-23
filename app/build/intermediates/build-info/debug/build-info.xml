@@ -5,32 +5,48 @@
     build-mode="COLD"
     density="xxhdpi"
     format="10"
+    ir-eligibility="R_CLASS_CHANGE"
     plugin-version="3.0.1"
-    timestamp="1521536317943"
+    timestamp="1521792185980"
     token="-7668379919008109620"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="531" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="75" />
     <task
         name="verifier"
-        duration="0" />
+        duration="72" />
 
+    <artifact
+        location="S:\DevD\MorphMe\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
+        type="SPLIT" />
+    <artifact
+        location="S:\DevD\MorphMe\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
+        type="SPLIT" />
+    <artifact
+        location="S:\DevD\MorphMe\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+        type="SPLIT" />
+    <artifact
+        location="S:\DevD\MorphMe\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
+        type="SPLIT" />
     <artifact
         location="S:\DevD\MorphMe\app\build\outputs\apk\debug\app-debug.apk"
         type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
-        timestamp="1521533302962"
+        timestamp="1521790297392"
         verifier="FULL_BUILD_REQUESTED" >
+        <artifact
+            location="S:\DevD\MorphMe\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
+            type="SPLIT" />
         <artifact
             location="S:\DevD\MorphMe\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
             type="SPLIT" />
@@ -64,23 +80,24 @@
         <artifact
             location="S:\DevD\MorphMe\app\build\outputs\apk\debug\app-debug.apk"
             type="SPLIT_MAIN" />
-        <artifact
-            location="S:\DevD\MorphMe\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
-            type="SPLIT" />
     </build>
     <build
         build-mode="COLD"
-        ir-eligibility="IMPLEMENTED_INTERFACES_CHANGE"
-        timestamp="1521535450724"
+        ir-eligibility="R_CLASS_CHANGE"
+        timestamp="1521792185980"
         verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="S:\DevD\MorphMe\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
+            type="SPLIT" />
+        <artifact
+            location="S:\DevD\MorphMe\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
+            type="SPLIT" />
         <artifact
             location="S:\DevD\MorphMe\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
             type="SPLIT" />
-    </build>
-    <build
-        build-mode="COLD"
-        timestamp="1521536317943"
-        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="S:\DevD\MorphMe\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
+            type="SPLIT" />
         <artifact
             location="S:\DevD\MorphMe\app\build\outputs\apk\debug\app-debug.apk"
             type="SPLIT_MAIN" />

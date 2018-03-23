@@ -39,7 +39,7 @@ class HomeFragment : Fragment() {
         al?.add("css")
         al?.add("javascript")
 
-        arrayAdapter = ArrayAdapter(view.context, R.layout.swing_item, R.id.helloText, al)
+        arrayAdapter = ArrayAdapter(view.context, R.layout.swing_item, R.id.questionText, al)
 
 
         swingView?.setAdapter(arrayAdapter)
@@ -74,7 +74,7 @@ class HomeFragment : Fragment() {
 
 
         // Optionally add an OnItemClickListener
-        swingView?.setOnItemClickListener(SwipeFlingAdapterView.OnItemClickListener { itemPosition, dataObject -> Toast.makeText(view?.context, "Left", Toast.LENGTH_LONG).show() })
+        //swingView?.setOnItemClickListener(SwipeFlingAdapterView.OnItemClickListener { itemPosition, dataObject -> Toast.makeText(view?.context, "Left", Toast.LENGTH_LONG).show() })
 
 
     }

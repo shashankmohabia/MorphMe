@@ -17,7 +17,7 @@ class AllUsersAdapter(private val allUsersObjectList: List<AllUsersObject>, priv
         holder.itemView.userId.text = allUsersObjectList[position].userID
         holder.itemView.userName.text = allUsersObjectList[position].userName
         when (allUsersObjectList[position].profilePicUrl) {
-            "default" -> Glide.with(context).load(R.mipmap.user).into(holder.itemView.userPic)
+            "default" -> Glide.with(context).load(R.mipmap.user_male).into(holder.itemView.userPic)
             else -> Glide.with(context).load(allUsersObjectList[position].profilePicUrl).into(holder.itemView.userPic)
         }
     }

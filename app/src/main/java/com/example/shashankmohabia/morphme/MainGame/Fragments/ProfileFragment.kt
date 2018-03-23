@@ -1,31 +1,17 @@
 package com.example.shashankmohabia.morphme.MainGame.Fragments
 
-import android.app.Activity
-import android.content.Context
-import android.content.Intent
-import android.graphics.Bitmap
-import android.graphics.ImageFormat
 import android.net.Uri
 import android.os.Bundle
-import android.provider.MediaStore
 import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
 import com.bumptech.glide.Glide
 
 import com.example.shashankmohabia.morphme.R
-import com.google.android.gms.tasks.OnFailureListener
-import com.google.android.gms.tasks.OnSuccessListener
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
-import com.google.firebase.storage.FirebaseStorage
-import com.google.firebase.storage.UploadTask
 import kotlinx.android.synthetic.main.fragment_profile.*
-import java.io.ByteArrayOutputStream
-import java.io.IOException
-import java.util.HashMap
 
 class ProfileFragment : Fragment() {
 
@@ -64,15 +50,18 @@ class ProfileFragment : Fragment() {
                     if (map["country"] != null) {
                         country.text = map["country"].toString()
                     }
+                    if (map["gender"] != null) {
+                        gender.text = map["gender"].toString()
+                    }
 
                     email.text = mAuth.currentUser!!.email
 
                     Glide.clear(profilePic)
-                    if (map["profileImageDownloadUri"] != null) {
-                        var imageUrl = map["profileImageDownloadUri"].toString()
-                        when (imageUrl) {
-                            "default" -> Glide.with(this@ProfileFragment).load(R.mipmap.user).into(profilePic)
-                            else -> Glide.with(this@ProfileFragment).load(imageUrl).into(profilePic)
+                    if (map["gender"] != null) {
+                        var gender = map["gender"].toString()
+                        when (gender) {
+                            "male" -> Glide.with(this@ProfileFragment).load(R.mipmap.user_male).into(profilePic)
+                            else -> Glide.with(this@ProfileFragment).load(R.mipmap.user_female).into(profilePic)
                         }
 
                     }

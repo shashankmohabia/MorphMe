@@ -46,7 +46,7 @@ class RegisterActivity : AppCompatActivity() {
                         userInfo.put("age", editAge.text.toString())
                         userInfo.put("country", editCountry.text.toString())
                         userInfo.put("superUserStatus", "no")
-                        userInfo.put("profileImageDownloadUri", "default")
+                        userInfo.put("gender", "male")
                         dbRefer.updateChildren(userInfo)
                     }
                 })
