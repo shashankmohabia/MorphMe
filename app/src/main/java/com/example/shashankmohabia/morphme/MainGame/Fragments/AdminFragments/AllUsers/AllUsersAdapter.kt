@@ -16,9 +16,9 @@ class AllUsersAdapter(private val allUsersObjectList: List<AllUsersObject>, priv
     override fun onBindViewHolder(holder: AllUsersViewHolder, position: Int) {
         holder.itemView.userId.text = allUsersObjectList[position].userID
         holder.itemView.userName.text = allUsersObjectList[position].userName
-        when (allUsersObjectList[position].profilePicUrl) {
-            "default" -> Glide.with(context).load(R.mipmap.user_male).into(holder.itemView.userPic)
-            else -> Glide.with(context).load(allUsersObjectList[position].profilePicUrl).into(holder.itemView.userPic)
+        when (allUsersObjectList[position].gender) {
+            "male" -> Glide.with(context).load(R.mipmap.user_male).into(holder.itemView.userPic)
+            else -> Glide.with(context).load(R.mipmap.user_female).into(holder.itemView.userPic)
         }
     }
 

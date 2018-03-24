@@ -5,6 +5,7 @@ import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.shashankmohabia.morphme.MainGame.Fragments.AdminFragments.AddQuestions.AddQuestionFragment
 import com.example.shashankmohabia.morphme.MainGame.Fragments.AdminFragments.AllUsers.AllUsersFragment
 
 import com.example.shashankmohabia.morphme.R
@@ -23,6 +24,9 @@ class AdminFragment : Fragment() {
 
         allUsers.setOnClickListener(View.OnClickListener {
             fragmentManager?.beginTransaction()?.replace(R.id.mainFrame, AllUsersFragment())?.addToBackStack(null)?.commit()
+        })
+        addQuestion.setOnClickListener(View.OnClickListener {
+            fragmentManager?.beginTransaction()?.replace(R.id.mainFrame, AddQuestionFragment())?.addToBackStack(null)?.commit()
         })
     }
 }
