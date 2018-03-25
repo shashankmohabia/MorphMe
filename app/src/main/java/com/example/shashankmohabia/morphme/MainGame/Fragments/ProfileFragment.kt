@@ -57,13 +57,12 @@ class ProfileFragment : Fragment() {
                     email.text = mAuth.currentUser!!.email
 
                     Glide.clear(profilePic)
-                    if (map["gender"] != null) {
-                        var gender = map["gender"].toString()
-                        when (gender) {
-                            "male" -> Glide.with(this@ProfileFragment).load(R.mipmap.user_male).into(profilePic)
-                            else -> Glide.with(this@ProfileFragment).load(R.mipmap.user_female).into(profilePic)
+                    if (map["profilePicUrl"] != null) {
+                        var profilePicUrl = map["profilePicUrl"].toString()
+                        when (profilePicUrl) {
+                            "default" -> Glide.with(this@ProfileFragment).load(R.drawable.ic_user).into(profilePic)
+                            else -> Glide.with(this@ProfileFragment).load(profilePicUrl).into(profilePic)
                         }
-
                     }
                 }
             }

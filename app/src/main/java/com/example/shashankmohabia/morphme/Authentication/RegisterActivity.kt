@@ -15,6 +15,7 @@ import kotlinx.android.synthetic.main.activity_register.*
 
 class RegisterActivity : AppCompatActivity() {
 
+    var gender:String? = null
     private var mAuth: FirebaseAuth? = null
     private var firebaseAuthStateListener: FirebaseAuth.AuthStateListener? = null
 
@@ -23,6 +24,8 @@ class RegisterActivity : AppCompatActivity() {
         setContentView(R.layout.activity_register)
 
         mAuth = FirebaseAuth.getInstance()
+
+        getGender()
 
         firebaseAuthStateListener = FirebaseAuth.AuthStateListener {
             if (FirebaseAuth.getInstance().currentUser != null) {
@@ -46,13 +49,30 @@ class RegisterActivity : AppCompatActivity() {
                         userInfo.put("age", editAge.text.toString())
                         userInfo.put("country", editCountry.text.toString())
                         userInfo.put("superUserStatus", "no")
-                        userInfo.put("gender", "male")
+                        userInfo.put("gender", gender.toString())
+                        userInfo.put("profilePicUrl", "default")
                         dbRefer.updateChildren(userInfo)
                     }
                 })
             } else {
                 textPasswordDoNotMatch.visibility = View.VISIBLE
             }
+        }
+    }
+
+    private fun getGender() {
+        val genders = arrayOf("Male", "Female", "Other")
+        selectGender.adapter = ArrayAdapter(this, R.layout.support_simple_spinner_dropdown_item, genders)
+        selectGender.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
+            override fun onItemSelected(parent: AdapterView<*>, view: View, position: Int, id: Long) {
+                when (selectGender.selectedItem.toString()) {
+                    "Male" -> gender = "Male"
+                    "Female" -> gender = "Female"
+                    "Other" -> gender = "Other"
+                }
+            }
+
+            override fun onNothingSelected(parent: AdapterView<*>) {}
         }
     }
 
