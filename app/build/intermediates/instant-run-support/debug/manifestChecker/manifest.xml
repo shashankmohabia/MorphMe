@@ -39,12 +39,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.shashankmohabia.morphme.Authentication.LoginActivity" />
-        <activity android:name="com.example.shashankmohabia.morphme.MainGame.MainActivity" />
-        <activity android:name="com.example.shashankmohabia.morphme.Authentication.RegisterActivity" />
-        <activity android:name="com.example.shashankmohabia.morphme.Rules.RulesActivity" />
-        <activity android:name="com.example.shashankmohabia.morphme.GameActivity" />
-        <activity android:name="com.example.shashankmohabia.morphme.MainGame.ProfileActivity" />
+        <activity
+            android:name="com.example.shashankmohabia.morphme.Authentication.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.shashankmohabia.morphme.MainGame.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.shashankmohabia.morphme.Authentication.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.shashankmohabia.morphme.Rules.RulesActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
             android:excludeFromRecents="true"

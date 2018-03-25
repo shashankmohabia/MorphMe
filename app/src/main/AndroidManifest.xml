@@ -19,12 +19,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Authentication.LoginActivity" />
-        <activity android:name=".MainGame.MainActivity" />
-        <activity android:name=".Authentication.RegisterActivity" />
-        <activity android:name=".Rules.RulesActivity" />
-        <activity android:name=".GameActivity" />
-        <activity android:name=".MainGame.ProfileActivity" />
+        <activity
+            android:name=".Authentication.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainGame.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Authentication.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Rules.RulesActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>
