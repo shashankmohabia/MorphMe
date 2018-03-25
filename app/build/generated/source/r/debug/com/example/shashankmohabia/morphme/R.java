@@ -4023,8 +4023,8 @@ public final class R {
     public static final int questionAdditionError=0x7f0800a3;
     public static final int questionCaption=0x7f0800a4;
     public static final int questionMedia=0x7f0800a5;
-    public static final int questionPic=0x7f0800a6;
-    public static final int questionText=0x7f0800a7;
+    public static final int questionPicSwing=0x7f0800a6;
+    public static final int questionTextSwing=0x7f0800a7;
     public static final int radio=0x7f0800a8;
     public static final int right=0x7f0800a9;
     public static final int right_icon=0x7f0800aa;

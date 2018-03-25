@@ -7,7 +7,7 @@ import android.support.v4.app.Fragment
 import com.example.shashankmohabia.morphme.Authentication.LoginActivity
 import com.example.shashankmohabia.morphme.MainGame.Fragments.AdminFragments.AdminFragment
 import com.example.shashankmohabia.morphme.MainGame.Fragments.DashBoardFragment
-import com.example.shashankmohabia.morphme.MainGame.Fragments.HomeFragment
+import com.example.shashankmohabia.morphme.MainGame.Fragments.QuestionsFragments.HomeFragment
 import com.example.shashankmohabia.morphme.MainGame.Fragments.ProfileFragment
 import com.example.shashankmohabia.morphme.R
 import com.google.firebase.auth.FirebaseAuth
