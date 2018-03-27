@@ -4,4 +4,4 @@ package com.example.shashankmohabia.morphme.MainGame.Fragments.AdminFragments.Al
  * Created by Shashank Mohabia on 3/20/2018.
  */
 
-class AllUsersObject(var userID: String?, var userName: String?,var gender: String?)
+class AllUsersObject(var userID: String?, var userName: String?,var profilepicUrl: String?)

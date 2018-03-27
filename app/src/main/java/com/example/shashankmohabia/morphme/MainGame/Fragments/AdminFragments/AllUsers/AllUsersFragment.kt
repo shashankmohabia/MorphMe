@@ -63,16 +63,16 @@ class AllUsersFragment : Fragment() {
             override fun onDataChange(dataSnapshot: DataSnapshot) {
                 if (dataSnapshot.exists()) {
                     var name = ""
-                    var gender = ""
+                    var profilePicUrl = ""
                     if (dataSnapshot.child("name").value != null) {
                         name = dataSnapshot.child("name").value!!.toString()
                     }
-                    if (dataSnapshot.child("gender").value != null) {
-                        gender = dataSnapshot.child("gender").value!!.toString()
+                    if (dataSnapshot.child("profilePicUrl").value != null) {
+                        profilePicUrl = dataSnapshot.child("profilePicUrl").value!!.toString()
                     }
 
 
-                    val obj = AllUsersObject(userId, name, gender)
+                    val obj = AllUsersObject(userId, name, profilePicUrl)
                     allUsersObjectArrayList.add(obj)
                     mAdapter?.notifyDataSetChanged()
                 }
