@@ -13,7 +13,7 @@
             android:id="@+id/imageLoginScreenLogo"
             android:layout_width="400dp"
             android:layout_height="400dp"
-            android:layout_above="@+id/scrollViewLogin"
+            android:layout_above="@+id/loginError"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:contentDescription="Logo"

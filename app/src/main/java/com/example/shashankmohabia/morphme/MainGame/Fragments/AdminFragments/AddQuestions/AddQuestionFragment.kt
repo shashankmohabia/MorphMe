@@ -73,18 +73,20 @@ class AddQuestionFragment : Fragment() {
             questionAdditionError.text = "You can add only Level4 questions for Phase2"
             questionAdditionError.visibility = View.VISIBLE
         } else {
-            var questionDb: DatabaseReference = FirebaseDatabase.getInstance().reference.child("Questions").child(phase).child(level)
+            var questionDb: DatabaseReference = FirebaseDatabase.getInstance().reference.child("Questions")
             questionDb.addListenerForSingleValueEvent(object : ValueEventListener {
                 override fun onCancelled(p0: DatabaseError?) {
                 }
 
                 override fun onDataChange(dataSnapshot: DataSnapshot) {
                     if (dataSnapshot.exists()) {
-                        val key = questionDb.child("Question").push().key
-                        questionDb = questionDb.child("Question").child(key)
+                        val key = questionDb.push().key
+                        questionDb = questionDb.child(key)
                         var questionInfo: MutableMap<String, Any> = mutableMapOf()
                         questionInfo.put("caption", questionCaption.text.toString())
                         questionInfo.put("answer", answer.toString())
+                        questionInfo.put("phase", phase.toString())
+                        questionInfo.put("level", level.toString())
                         questionInfo.put("companionQuestion", companionQuestion.text.toString())
                         questionDb.updateChildren(questionInfo)
                         questionAdditionError.visibility = View.INVISIBLE
@@ -114,7 +116,7 @@ class AddQuestionFragment : Fragment() {
                             })
                         }
 
-                        toast("Your questionis successfully added " + numberOfChilds.toString())
+                        toast("Your question is successfully added " + numberOfChilds.toString())
                         questionCaption.text = null
                         companionQuestion.text = null
                         questionMedia.setImageResource(R.drawable.ic_notifications_black_24dp)
