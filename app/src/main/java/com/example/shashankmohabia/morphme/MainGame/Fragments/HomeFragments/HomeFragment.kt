@@ -51,7 +51,8 @@ class HomeFragment : Fragment() {
             }
 
             override fun onLeftCardExit(dataObject: Any) {
-                alert("Are you sure it is fake?") {
+                val item = dataObject as QuestionModel
+                alert(item.questionCompanionQuestion.toString()) {
                     title = "Fake"
                     positiveButton("Yes") {}
                     negativeButton("No") {}
@@ -59,7 +60,8 @@ class HomeFragment : Fragment() {
             }
 
             override fun onRightCardExit(dataObject: Any) {
-                alert("Are you sure it is not fake?") {
+                val item = dataObject as QuestionModel
+                alert(item.questionCompanionQuestion.toString()) {
                     title = " Not Fake"
                     positiveButton("Yes") {}
                     negativeButton("No") {}
