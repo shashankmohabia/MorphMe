@@ -12,7 +12,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
-import android.widget.Toast
 
 import com.example.shashankmohabia.morphme.R
 import com.google.android.gms.tasks.OnSuccessListener
@@ -26,6 +25,7 @@ import java.io.IOException
 import java.util.HashMap
 
 
+@Suppress("NAME_SHADOWING")
 class AddQuestionFragment : Fragment() {
 
     var phase: String? = null
@@ -73,25 +73,25 @@ class AddQuestionFragment : Fragment() {
             questionAdditionError.text = "You can add only Level4 questions for Phase2"
             questionAdditionError.visibility = View.VISIBLE
         } else {
-            var questionDb: DatabaseReference = FirebaseDatabase.getInstance().reference.child("Questions")
+            var questionDb = FirebaseDatabase.getInstance().reference.child("Questions")
             questionDb.addListenerForSingleValueEvent(object : ValueEventListener {
                 override fun onCancelled(p0: DatabaseError?) {
+                    TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
                 }
 
                 override fun onDataChange(dataSnapshot: DataSnapshot) {
                     if (dataSnapshot.exists()) {
                         val key = questionDb.push().key
                         questionDb = questionDb.child(key)
-                        var questionInfo: MutableMap<String, Any> = mutableMapOf()
+                        val questionInfo: MutableMap<String, Any> = mutableMapOf()
                         questionInfo.put("caption", questionCaption.text.toString())
                         questionInfo.put("answer", answer.toString())
                         questionInfo.put("phase", phase.toString())
                         questionInfo.put("level", level.toString())
                         questionInfo.put("companionQuestion", companionQuestion.text.toString())
+                        questionInfo.put("mediaDownloadUri", "https://starscue.com/wp-content/uploads/2017/08/Alia-Bhatt.jpg")
                         questionDb.updateChildren(questionInfo)
                         questionAdditionError.visibility = View.INVISIBLE
-                        var numberOfChilds = dataSnapshot.child("Question").childrenCount + 1
-
                         if (resultImageURI != null) {
                             val filepath = FirebaseStorage.getInstance().reference.child("QuestionMedia").child(key)
                             var bitmap: Bitmap? = null
@@ -109,25 +109,28 @@ class AddQuestionFragment : Fragment() {
                             ult.addOnFailureListener {}
                             ult.addOnSuccessListener(OnSuccessListener { taskSnapshot ->
                                 val downloadUri = taskSnapshot.downloadUrl
-                                var questionInfo: MutableMap<String, Any> = mutableMapOf()
-                                questionInfo.put("mediaDownloadUri", downloadUri!!.toString())
-                                questionDb.updateChildren(questionInfo)
+                                toast(downloadUri.toString())
+                                //var questionInfo: MutableMap<String, Any> = mutableMapOf()
+                                //questionInfo.put("mediaDownloadUri", downloadUri!!.toString())
+                                //questionDb.updateChildren(questionInfo)
                                 return@OnSuccessListener
                             })
                         }
 
-                        toast("Your question is successfully added " + numberOfChilds.toString())
+
+                        toast("Your question is successfully added ")
                         questionCaption.text = null
                         companionQuestion.text = null
                         questionMedia.setImageResource(R.drawable.ic_notifications_black_24dp)
 
-                    } else {
-                        toast("Datasnapshot does not exist")
+                    }
+                    else{
+                        toast("DataSnapShot does not exist")
                     }
                 }
-
             })
         }
+
     }
 
     private fun getAnswer() {
@@ -147,7 +150,7 @@ class AddQuestionFragment : Fragment() {
 
     private fun getPhaseAndLevel() {
         val phases = arrayOf("Phase 1", "Phase 2")
-        var levels = arrayOf("Level 1", "Level 2", "Level 3", "Level 4")
+        val levels = arrayOf("Level 1", "Level 2", "Level 3", "Level 4")
         selectPhase.adapter = ArrayAdapter(view?.context, R.layout.support_simple_spinner_dropdown_item, phases)
         selectLevel.adapter = ArrayAdapter(view?.context, R.layout.support_simple_spinner_dropdown_item, levels)
 
