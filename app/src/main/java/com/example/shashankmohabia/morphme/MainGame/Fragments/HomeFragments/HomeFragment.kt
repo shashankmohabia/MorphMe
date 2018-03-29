@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.shashankmohabia.morphme.R
+import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.ChildEventListener
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
@@ -54,18 +55,48 @@ class HomeFragment : Fragment() {
                 val item = dataObject as QuestionModel
                 alert(item.questionCompanionQuestion.toString()) {
                     title = "Fake"
-                    positiveButton("Yes") {}
-                    negativeButton("No") {}
+                    positiveButton("Yes") {
+                        var companionQuestionAnswer = "Yes"
+                        if (item.questionAnswer.equals("Fake")) {
+                            addCorrectResponse(item, companionQuestionAnswer)
+                        } else {
+                            addWrongResponse(item, companionQuestionAnswer)
+                        }
+                    }
+                    negativeButton("No") {
+                        var companionQuestionAnswer = "No"
+                        if (item.questionAnswer.equals("Fake")) {
+                            addCorrectResponse(item, companionQuestionAnswer)
+                        } else {
+                            addWrongResponse(item, companionQuestionAnswer)
+                        }
+                    }
                 }.show()
+
             }
 
             override fun onRightCardExit(dataObject: Any) {
                 val item = dataObject as QuestionModel
                 alert(item.questionCompanionQuestion.toString()) {
                     title = " Not Fake"
-                    positiveButton("Yes") {}
-                    negativeButton("No") {}
+                    positiveButton("Yes") {
+                        var companionQuestionAnswer = "Yes"
+                        if (item.questionAnswer.equals("Not Fake")) {
+                            addCorrectResponse(item, companionQuestionAnswer)
+                        } else {
+                            addWrongResponse(item, companionQuestionAnswer)
+                        }
+                    }
+                    negativeButton("No") {
+                        var companionQuestionAnswer = "No"
+                        if (item.questionAnswer.equals("Not Fake")) {
+                            addCorrectResponse(item, companionQuestionAnswer)
+                        } else {
+                            addWrongResponse(item, companionQuestionAnswer)
+                        }
+                    }
                 }.show()
+
             }
 
             override fun onAdapterAboutToEmpty(itemsInAdapter: Int) {}
@@ -78,6 +109,20 @@ class HomeFragment : Fragment() {
         //swingView?.setOnItemClickListener(SwipeFlingAdapterView.OnItemClickListener { itemPosition, dataObject -> Toast.makeText(view?.context, "Left", Toast.LENGTH_LONG).show() })
 
 
+    }
+
+    private fun addWrongResponse(item: QuestionModel, companionQuestionAnswer: String) {
+        val dbRefer = FirebaseDatabase.getInstance().reference.child("Users").child(FirebaseAuth.getInstance().currentUser?.uid).child("Responses").child("Wrong").child(item.questionId)
+        val questionInfo: MutableMap<String, Any> = mutableMapOf()
+        questionInfo.put("companionQuestionResponse", companionQuestionAnswer)
+        dbRefer.updateChildren(questionInfo)
+    }
+
+    private fun addCorrectResponse(item: QuestionModel, companionQuestionAnswer: String) {
+        val dbRefer = FirebaseDatabase.getInstance().reference.child("Users").child(FirebaseAuth.getInstance().currentUser?.uid).child("Responses").child("Correct").child(item.questionId)
+        val questionInfo: MutableMap<String, Any> = mutableMapOf()
+        questionInfo.put("companionQuestionResponse", companionQuestionAnswer)
+        dbRefer.updateChildren(questionInfo)
     }
 
     private fun getQuestionData() {
@@ -105,7 +150,7 @@ class HomeFragment : Fragment() {
                             }
                             4 -> {
                                 currentLevel = "Level3"
-                               // toast("Level 3")
+                                // toast("Level 3")
                             }
                             6 -> {
                                 currentPhase = "Phase2"
