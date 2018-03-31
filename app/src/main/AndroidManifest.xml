@@ -32,7 +32,8 @@
         <activity
             android:name=".Rules.RulesActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".MainGame.Fragments.AdminFragments.AllUsers.UserOptions.Main2Activity"></activity>
+        <activity android:name=".MainGame.Fragments.AdminFragments.AllUsers.UserOptions.UserOptionsActivity" />
+        <activity android:name=".MainGame.Fragments.AdminFragments.AllUsers.UserOptions.UserAnalysisActivity"></activity>
     </application>
 
 </manifest>

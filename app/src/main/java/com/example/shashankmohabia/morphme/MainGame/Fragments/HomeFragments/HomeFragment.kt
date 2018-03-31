@@ -131,7 +131,8 @@ class HomeFragment : Fragment() {
         questionDb.addChildEventListener(object : ChildEventListener {
             override fun onChildAdded(dataSnapshot: DataSnapshot?, p1: String?) {
                 if (dataSnapshot != null) {
-                    if (dataSnapshot.exists() and (dataSnapshot.child("phase").value == currentPhase) and (dataSnapshot.child("level").value == currentLevel)) {
+                    // and (dataSnapshot.child("phase").value == currentPhase) and (dataSnapshot.child("level").value == currentLevel)
+                    if (dataSnapshot.exists()) {
                         val id = dataSnapshot.key
                         val caption = dataSnapshot.child("caption")?.value!!.toString()
                         val answer = dataSnapshot.child("answer")?.value!!.toString()

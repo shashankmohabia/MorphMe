@@ -2,12 +2,97 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
     tools:context="com.example.shashankmohabia.morphme.MainGame.Fragments.ProfileFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Dashboard" />
+        android:layout_height="match_parent">
+        <android.support.v7.widget.CardView
+            android:layout_width="350dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            app:cardBackgroundColor="@color/dialog"
+            android:id="@+id/cardView2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.99"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="Phase 1"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="6"
+                        android:id="@+id/Phase1Score"
+                        android:textColor="@color/endblue"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.02"
+                    android:background="@color/graylight"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.99"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="Phase 2"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="9"
+                        android:id="@+id/Phase2Score"
+                        android:textColor="@color/endblue"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:id="@+id/dummytext"
+            android:text="ovndonvofdn"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/cardView2"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/cardView2"
+            android:layout_marginBottom="208dp" />
+    </RelativeLayout>
 
 </FrameLayout>

@@ -71,6 +71,35 @@
 
             </RelativeLayout>
         </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:id="@+id/overallAnalysis"
+            android:layout_width="250dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="45dp"
+            app:cardBackgroundColor="@color/logoColor"
+            app:cardCornerRadius="25dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignLeft="@+id/overallAnalysis"
+                android:layout_alignStart="@+id/overallAnalysisText"
+                android:layout_marginLeft="12dp"
+                android:layout_marginStart="12dp">
+
+                <TextView
+                    android:id="@+id/overallAnalysisText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="Show Analysis"
+                    android:textColor="#FF000000"
+                    android:textSize="25dp" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
     </LinearLayout>
 
 </FrameLayout>

@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from S:\DevD\MorphMe\app\src\main\AndroidManifest.xml:2:1-38:12
-INJECTED from S:\DevD\MorphMe\app\src\main\AndroidManifest.xml:2:1-38:12
-INJECTED from S:\DevD\MorphMe\app\src\main\AndroidManifest.xml:2:1-38:12
-INJECTED from S:\DevD\MorphMe\app\src\main\AndroidManifest.xml:2:1-38:12
+ADDED from S:\DevD\MorphMe\app\src\main\AndroidManifest.xml:2:1-39:12
+INJECTED from S:\DevD\MorphMe\app\src\main\AndroidManifest.xml:2:1-39:12
+INJECTED from S:\DevD\MorphMe\app\src\main\AndroidManifest.xml:2:1-39:12
+INJECTED from S:\DevD\MorphMe\app\src\main\AndroidManifest.xml:2:1-39:12
 MERGED from [com.roughike:bottom-bar:2.3.1] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\bottom-bar-2.3.1.aar\7114255f6faa87ac058f030c8722dea4\AndroidManifest.xml:2:1-12:12
 MERGED from [com.android.support:design:27.1.0] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\design-27.1.0.aar\c10c1b861a472dd862e4e2171512ac89\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:appcompat-v7:27.1.0] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.0.aar\42b967c6eab66f36c7bfdf2c4f861ef8\AndroidManifest.xml:17:1-22:12
@@ -49,20 +49,20 @@ MERGED from [com.google.android.gms:play-services-base-license:12.0.1] C:\Users\
 MERGED from [android.arch.core:runtime:1.1.0] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\f9ba76c7db8af8171bb88088f848fdcb\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-analytics-impl-license:12.0.1] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-license-12.0.1.aar\3a5936d288a1330a37b00b558d02be6f\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:firebase-iid-license:12.0.1] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\firebase-iid-license-12.0.1.aar\699bfd5c051534275c50874d6e2ab295\AndroidManifest.xml:17:1-24:12
-INJECTED from S:\DevD\MorphMe\app\src\main\AndroidManifest.xml:2:1-38:12
-INJECTED from S:\DevD\MorphMe\app\src\main\AndroidManifest.xml:2:1-38:12
-INJECTED from S:\DevD\MorphMe\app\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from S:\DevD\MorphMe\app\src\main\AndroidManifest.xml:2:1-39:12
+INJECTED from S:\DevD\MorphMe\app\src\main\AndroidManifest.xml:2:1-39:12
+INJECTED from S:\DevD\MorphMe\app\src\main\AndroidManifest.xml:2:1-39:12
 	package
 		ADDED from S:\DevD\MorphMe\app\src\main\AndroidManifest.xml:3:5-50
 		INJECTED from S:\DevD\MorphMe\app\src\main\AndroidManifest.xml
 		INJECTED from S:\DevD\MorphMe\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from S:\DevD\MorphMe\app\src\main\AndroidManifest.xml
-		ADDED from S:\DevD\MorphMe\app\src\main\AndroidManifest.xml:2:1-38:12
+		ADDED from S:\DevD\MorphMe\app\src\main\AndroidManifest.xml:2:1-39:12
 		INJECTED from S:\DevD\MorphMe\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from S:\DevD\MorphMe\app\src\main\AndroidManifest.xml
-		ADDED from S:\DevD\MorphMe\app\src\main\AndroidManifest.xml:2:1-38:12
+		ADDED from S:\DevD\MorphMe\app\src\main\AndroidManifest.xml:2:1-39:12
 		INJECTED from S:\DevD\MorphMe\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from S:\DevD\MorphMe\app\src\main\AndroidManifest.xml:2:11-69
@@ -71,7 +71,7 @@ ADDED from S:\DevD\MorphMe\app\src\main\AndroidManifest.xml:5:5-80
 	android:name
 		ADDED from S:\DevD\MorphMe\app\src\main\AndroidManifest.xml:5:22-77
 application
-ADDED from S:\DevD\MorphMe\app\src\main\AndroidManifest.xml:7:5-36:19
+ADDED from S:\DevD\MorphMe\app\src\main\AndroidManifest.xml:7:5-37:19
 MERGED from [com.google.firebase:firebase-auth:12.0.1] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\firebase-auth-12.0.1.aar\bbed9b443f15fa1ae3e526740bcca18d\AndroidManifest.xml:22:5-30:19
 MERGED from [com.google.firebase:firebase-auth:12.0.1] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\firebase-auth-12.0.1.aar\bbed9b443f15fa1ae3e526740bcca18d\AndroidManifest.xml:22:5-30:19
 MERGED from [com.google.firebase:firebase-core:12.0.1] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\firebase-core-12.0.1.aar\004e8275caef0025e5249be333e88d32\AndroidManifest.xml:5:5-20
@@ -170,10 +170,14 @@ ADDED from S:\DevD\MorphMe\app\src\main\AndroidManifest.xml:32:9-34:52
 		ADDED from S:\DevD\MorphMe\app\src\main\AndroidManifest.xml:34:13-49
 	android:name
 		ADDED from S:\DevD\MorphMe\app\src\main\AndroidManifest.xml:33:13-48
-activity#com.example.shashankmohabia.morphme.MainGame.Fragments.AdminFragments.AllUsers.UserOptions.Main2Activity
-ADDED from S:\DevD\MorphMe\app\src\main\AndroidManifest.xml:35:9-115
+activity#com.example.shashankmohabia.morphme.MainGame.Fragments.AdminFragments.AllUsers.UserOptions.UserOptionsActivity
+ADDED from S:\DevD\MorphMe\app\src\main\AndroidManifest.xml:35:9-112
 	android:name
-		ADDED from S:\DevD\MorphMe\app\src\main\AndroidManifest.xml:35:19-103
+		ADDED from S:\DevD\MorphMe\app\src\main\AndroidManifest.xml:35:19-109
+activity#com.example.shashankmohabia.morphme.MainGame.Fragments.AdminFragments.AllUsers.UserOptions.UserAnalysisActivity
+ADDED from S:\DevD\MorphMe\app\src\main\AndroidManifest.xml:36:9-122
+	android:name
+		ADDED from S:\DevD\MorphMe\app\src\main\AndroidManifest.xml:36:19-110
 uses-sdk
 INJECTED from S:\DevD\MorphMe\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from S:\DevD\MorphMe\app\src\main\AndroidManifest.xml

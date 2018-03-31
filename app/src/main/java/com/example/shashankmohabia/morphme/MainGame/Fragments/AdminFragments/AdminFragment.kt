@@ -28,5 +28,8 @@ class AdminFragment : Fragment() {
         addQuestion.setOnClickListener(View.OnClickListener {
             fragmentManager?.beginTransaction()?.replace(R.id.mainFrame, AddQuestionFragment())?.addToBackStack(null)?.commit()
         })
+        overallAnalysis.setOnClickListener(View.OnClickListener {
+            fragmentManager?.beginTransaction()?.replace(R.id.mainFrame, AnalysisFragment())?.addToBackStack(null)?.commit()
+        })
     }
 }

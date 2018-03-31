@@ -46,7 +46,7 @@ class AllUsersFragment : Fragment() {
         val progressRunnable = Runnable { progress.cancel() }
 
         val pdCanceller = Handler()
-        pdCanceller.postDelayed(progressRunnable, 3000)
+        pdCanceller.postDelayed(progressRunnable, 1500)
     }
 
     private fun getUserObjectList(): List<AllUsersObject> {
