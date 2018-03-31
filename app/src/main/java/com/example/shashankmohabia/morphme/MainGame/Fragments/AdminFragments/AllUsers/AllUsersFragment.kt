@@ -1,6 +1,8 @@
 package com.example.shashankmohabia.morphme.MainGame.Fragments.AdminFragments.AllUsers
 
+import android.app.ProgressDialog
 import android.os.Bundle
+import android.os.Handler
 import android.support.v4.app.Fragment
 import android.support.v7.widget.LinearLayoutManager
 import android.view.LayoutInflater
@@ -24,7 +26,7 @@ class AllUsersFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
+        showProgressDialog()
         getUserDb()
         mAdapter = AllUsersAdapter(getUserObjectList(), view.context)
 
@@ -33,6 +35,18 @@ class AllUsersFragment : Fragment() {
         allUsersRecycler.layoutManager = LinearLayoutManager(view.context)
         allUsersRecycler.adapter = mAdapter
 
+    }
+
+    private fun showProgressDialog() {
+        val progress = ProgressDialog(view?.context)
+        progress.setTitle("Please Wait")
+        progress.setMessage("Loading...")
+        progress.show()
+
+        val progressRunnable = Runnable { progress.cancel() }
+
+        val pdCanceller = Handler()
+        pdCanceller.postDelayed(progressRunnable, 3000)
     }
 
     private fun getUserObjectList(): List<AllUsersObject> {

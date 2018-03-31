@@ -1,0 +1,4 @@
+#Sat Mar 31 06:56:37 IST 2018
+base.0=S\:\\DevD\\MorphMe\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\6
+path.0=classes.dex
+renamed.0=classes.dex
