@@ -90,7 +90,7 @@ class ProfileFragment : Fragment() {
                         ult.addOnFailureListener {}
                         ult.addOnSuccessListener(OnSuccessListener { taskSnapshot ->
                             val downloadUri = taskSnapshot.downloadUrl
-                            var userInfo: MutableMap<String, Any> = mutableMapOf()
+                            val userInfo: MutableMap<String, Any> = mutableMapOf()
                             userInfo.put("profilePicUrl", downloadUri!!.toString())
                             userDb.updateChildren(userInfo)
                             return@OnSuccessListener

@@ -17,15 +17,12 @@ import com.example.shashankmohabia.morphme.R
 import com.google.android.gms.tasks.OnSuccessListener
 import com.google.firebase.database.*
 import com.google.firebase.storage.FirebaseStorage
-import com.google.firebase.storage.UploadTask
 import kotlinx.android.synthetic.main.fragment_add_question.*
 import org.jetbrains.anko.support.v4.toast
 import java.io.ByteArrayOutputStream
 import java.io.IOException
-import java.util.HashMap
 
 
-@Suppress("NAME_SHADOWING")
 class AddQuestionFragment : Fragment() {
 
     var phase: String? = null
@@ -35,7 +32,6 @@ class AddQuestionFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
-        // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_add_question, container, false)
     }
 
@@ -67,7 +63,7 @@ class AddQuestionFragment : Fragment() {
 
     private fun addQuestion() {
         if (phase.equals("Phase1") and level.equals("Level4")) {
-            questionAdditionError.text = "You can add only Level1, 2, 3 questions for Phase1"
+            questionAdditionError.text = "You can add only Level 1, 2, 3 questions for Phase1"
             questionAdditionError.visibility = View.VISIBLE
         } else if (phase.equals("Phase2") and (level != "Level4")) {
             questionAdditionError.text = "You can add only Level4 questions for Phase2"
@@ -93,7 +89,7 @@ class AddQuestionFragment : Fragment() {
                         questionDb.updateChildren(questionInfo)
                         questionAdditionError.visibility = View.INVISIBLE
                         if (resultImageURI != null) {
-                            val filepath = FirebaseStorage.getInstance().reference.child("QuestionMedia").child(key)
+                            val filepath = FirebaseStorage.getInstance().reference.child("QuestionMedias").child(key)
                             var bitmap: Bitmap? = null
 
                             try {
@@ -109,10 +105,9 @@ class AddQuestionFragment : Fragment() {
                             ult.addOnFailureListener {}
                             ult.addOnSuccessListener(OnSuccessListener { taskSnapshot ->
                                 val downloadUri = taskSnapshot.downloadUrl
-                                toast(downloadUri.toString())
-                                //var questionInfo: MutableMap<String, Any> = mutableMapOf()
-                                //questionInfo.put("mediaDownloadUri", downloadUri!!.toString())
-                                //questionDb.updateChildren(questionInfo)
+                                val questionInfo: MutableMap<String, Any> = mutableMapOf()
+                                questionInfo.put("mediaDownloadUri", downloadUri!!.toString())
+                                questionDb.updateChildren(questionInfo)
                                 return@OnSuccessListener
                             })
                         }
