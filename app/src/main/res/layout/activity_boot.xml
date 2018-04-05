@@ -16,9 +16,9 @@
 
         <ImageView
             android:id="@+id/booticon"
-            android:layout_width="2000dp"
-            android:layout_height="300dp"
-            android:src="@mipmap/splash_logo" />
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/logo" />
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

@@ -125,7 +125,7 @@ MERGED from [com.google.firebase:firebase-iid-license:12.0.1] C:\Users\shash\.gr
 	android:roundIcon
 		ADDED from S:\DevD\MorphMe\app\src\main\AndroidManifest.xml:11:9-54
 	android:icon
-		ADDED from S:\DevD\MorphMe\app\src\main\AndroidManifest.xml:9:9-43
+		ADDED from S:\DevD\MorphMe\app\src\main\AndroidManifest.xml:9:9-36
 	android:allowBackup
 		ADDED from S:\DevD\MorphMe\app\src\main\AndroidManifest.xml:8:9-35
 	android:theme

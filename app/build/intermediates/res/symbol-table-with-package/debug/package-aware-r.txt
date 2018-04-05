@@ -1273,8 +1273,8 @@ int menu bottom_navigation_normal_user 0x7f0b0001
 int mipmap boy 0x7f0c0000
 int mipmap ic_launcher 0x7f0c0001
 int mipmap ic_launcher_round 0x7f0c0002
-int mipmap owl 0x7f0c0003
-int mipmap profile_circle 0x7f0c0004
+int mipmap logo 0x7f0c0003
+int mipmap owl 0x7f0c0004
 int mipmap slider_background 0x7f0c0005
 int mipmap soup 0x7f0c0006
 int mipmap splash_logo 0x7f0c0007

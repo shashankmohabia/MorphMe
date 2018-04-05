@@ -4239,8 +4239,8 @@ public final class R {
     public static final int boy=0x7f0c0000;
     public static final int ic_launcher=0x7f0c0001;
     public static final int ic_launcher_round=0x7f0c0002;
-    public static final int owl=0x7f0c0003;
-    public static final int profile_circle=0x7f0c0004;
+    public static final int logo=0x7f0c0003;
+    public static final int owl=0x7f0c0004;
     public static final int slider_background=0x7f0c0005;
     public static final int soup=0x7f0c0006;
     public static final int splash_logo=0x7f0c0007;
