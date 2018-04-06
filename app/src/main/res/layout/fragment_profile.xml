@@ -9,21 +9,23 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="355dp">
+        android:layout_height="0dp"
+        android:layout_weight="100">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="300dp"
+            android:layout_height="match_parent"
             android:background="@mipmap/slider_background"
             android:orientation="vertical">
-
-            <ImageView
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/profilePic"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_width="135dp"
+                android:layout_height="135dp"
+                android:layout_marginTop="50dp"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="45dp"
-                app:srcCompat="@mipmap/user_male" />
+                android:src="@mipmap/user_male"/>
+
 
             <TextView
                 android:id="@+id/name"
@@ -42,9 +44,10 @@
 
     <LinearLayout
         android:layout_width="275dp"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="100"
         android:layout_gravity="center"
-        android:layout_marginTop="35dp"
+        android:paddingVertical="20dp"
         android:orientation="vertical">
 
         <LinearLayout

@@ -6,12 +6,13 @@
     android:orientation="horizontal"
     android:padding="10dp">
 
-    <ImageView
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/userPic"
         android:layout_width="0dp"
-        android:layout_height="60sp"
-        android:layout_weight="25"
-        android:src="@android:mipmap/sym_def_app_icon" />
+        android:layout_height="60dp"
+        android:src="@android:mipmap/sym_def_app_icon"
+        android:layout_weight="25"/>
 
     <LinearLayout
         android:layout_width="0dp"
