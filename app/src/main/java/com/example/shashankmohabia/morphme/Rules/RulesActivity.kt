@@ -8,7 +8,7 @@ import android.text.Html
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
-import com.example.shashankmohabia.morphme.MainGame.MainActivity
+import com.example.shashankmohabia.morphme.MainGame.Activities.MainActivity
 import com.example.shashankmohabia.morphme.R
 import kotlinx.android.synthetic.main.activity_rules.*
 

@@ -5,12 +5,11 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
-import com.example.shashankmohabia.morphme.MainGame.MainActivity
+import com.example.shashankmohabia.morphme.MainGame.Activities.MainActivity
 import com.example.shashankmohabia.morphme.R
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
 import kotlinx.android.synthetic.main.activity_login.*
-import kotlinx.android.synthetic.main.activity_main.*
 
 class LoginActivity : AppCompatActivity() {
 

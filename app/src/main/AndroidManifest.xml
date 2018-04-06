@@ -24,7 +24,7 @@
             android:name=".Authentication.LoginActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".MainGame.MainActivity"
+            android:name=".MainGame.Activities.MainActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name=".Authentication.RegisterActivity"
@@ -32,8 +32,8 @@
         <activity
             android:name=".Rules.RulesActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".MainGame.Fragments.AdminFragments.AllUsers.UserOptions.UserOptionsActivity" />
-        <activity android:name=".MainGame.Fragments.AdminFragments.AllUsers.UserOptions.UserAnalysisActivity"></activity>
+        <activity android:name=".MainGame.AdminFragments.AllUsers.UserOptions.UserOptionsActivity" />
+        <activity android:name=".MainGame.AdminFragments.AllUsers.UserOptions.UserAnalysisActivity"></activity>
     </application>
 
 </manifest>

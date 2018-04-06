@@ -44,7 +44,7 @@
             android:name="com.example.shashankmohabia.morphme.Authentication.LoginActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.example.shashankmohabia.morphme.MainGame.MainActivity"
+            android:name="com.example.shashankmohabia.morphme.MainGame.Activities.MainActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.example.shashankmohabia.morphme.Authentication.RegisterActivity"
@@ -52,8 +52,8 @@
         <activity
             android:name="com.example.shashankmohabia.morphme.Rules.RulesActivity"
             android:screenOrientation="portrait" />
-        <activity android:name="com.example.shashankmohabia.morphme.MainGame.Fragments.AdminFragments.AllUsers.UserOptions.UserOptionsActivity" />
-        <activity android:name="com.example.shashankmohabia.morphme.MainGame.Fragments.AdminFragments.AllUsers.UserOptions.UserAnalysisActivity" />
+        <activity android:name="com.example.shashankmohabia.morphme.MainGame.AdminFragments.AllUsers.UserOptions.UserOptionsActivity" />
+        <activity android:name="com.example.shashankmohabia.morphme.MainGame.AdminFragments.AllUsers.UserOptions.UserAnalysisActivity" />
         <activity
             android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
             android:excludeFromRecents="true"

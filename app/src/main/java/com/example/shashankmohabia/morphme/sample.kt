@@ -1,4 +1,4 @@
-package com.example.shashankmohabia.morphme.MainGame.Fragments.AdminFragments.AddQuestions
+package com.example.shashankmohabia.morphme.MainGame.Activities.AdminFragments.AddQuestions
 
 import android.app.Activity
 import android.content.Intent
@@ -12,15 +12,9 @@ import android.widget.AdapterView
 import android.widget.ArrayAdapter
 
 import com.example.shashankmohabia.morphme.R
-import com.google.android.gms.tasks.OnSuccessListener
 import com.google.firebase.database.*
-import com.google.firebase.storage.FirebaseStorage
-import com.google.firebase.storage.UploadTask
 import kotlinx.android.synthetic.main.fragment_add_question.*
 import org.jetbrains.anko.support.v4.toast
-import java.io.ByteArrayOutputStream
-import java.io.IOException
-import java.util.HashMap
 
 
 class Sample : Fragment() {

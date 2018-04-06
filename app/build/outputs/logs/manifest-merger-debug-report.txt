@@ -152,12 +152,12 @@ ADDED from S:\DevD\MorphMe\app\src\main\AndroidManifest.xml:23:9-25:52
 		ADDED from S:\DevD\MorphMe\app\src\main\AndroidManifest.xml:25:13-49
 	android:name
 		ADDED from S:\DevD\MorphMe\app\src\main\AndroidManifest.xml:24:13-57
-activity#com.example.shashankmohabia.morphme.MainGame.MainActivity
+activity#com.example.shashankmohabia.morphme.MainGame.Activities.MainActivity
 ADDED from S:\DevD\MorphMe\app\src\main\AndroidManifest.xml:26:9-28:52
 	android:screenOrientation
 		ADDED from S:\DevD\MorphMe\app\src\main\AndroidManifest.xml:28:13-49
 	android:name
-		ADDED from S:\DevD\MorphMe\app\src\main\AndroidManifest.xml:27:13-50
+		ADDED from S:\DevD\MorphMe\app\src\main\AndroidManifest.xml:27:13-61
 activity#com.example.shashankmohabia.morphme.Authentication.RegisterActivity
 ADDED from S:\DevD\MorphMe\app\src\main\AndroidManifest.xml:29:9-31:52
 	android:screenOrientation
@@ -170,14 +170,14 @@ ADDED from S:\DevD\MorphMe\app\src\main\AndroidManifest.xml:32:9-34:52
 		ADDED from S:\DevD\MorphMe\app\src\main\AndroidManifest.xml:34:13-49
 	android:name
 		ADDED from S:\DevD\MorphMe\app\src\main\AndroidManifest.xml:33:13-48
-activity#com.example.shashankmohabia.morphme.MainGame.Fragments.AdminFragments.AllUsers.UserOptions.UserOptionsActivity
-ADDED from S:\DevD\MorphMe\app\src\main\AndroidManifest.xml:35:9-112
+activity#com.example.shashankmohabia.morphme.MainGame.AdminFragments.AllUsers.UserOptions.UserOptionsActivity
+ADDED from S:\DevD\MorphMe\app\src\main\AndroidManifest.xml:35:9-102
 	android:name
-		ADDED from S:\DevD\MorphMe\app\src\main\AndroidManifest.xml:35:19-109
-activity#com.example.shashankmohabia.morphme.MainGame.Fragments.AdminFragments.AllUsers.UserOptions.UserAnalysisActivity
-ADDED from S:\DevD\MorphMe\app\src\main\AndroidManifest.xml:36:9-122
+		ADDED from S:\DevD\MorphMe\app\src\main\AndroidManifest.xml:35:19-99
+activity#com.example.shashankmohabia.morphme.MainGame.AdminFragments.AllUsers.UserOptions.UserAnalysisActivity
+ADDED from S:\DevD\MorphMe\app\src\main\AndroidManifest.xml:36:9-112
 	android:name
-		ADDED from S:\DevD\MorphMe\app\src\main\AndroidManifest.xml:36:19-110
+		ADDED from S:\DevD\MorphMe\app\src\main\AndroidManifest.xml:36:19-100
 uses-sdk
 INJECTED from S:\DevD\MorphMe\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from S:\DevD\MorphMe\app\src\main\AndroidManifest.xml

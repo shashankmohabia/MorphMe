@@ -4,6 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.shashankmohabia.morphme.MainGame.Fragments.AdminFragments.AllUsers.UserOptions.UserAnalysisActivity">
+    tools:context="com.example.shashankmohabia.morphme.MainGame.AdminFragments.AllUsers.UserOptions.UserAnalysisActivity">
 
 </android.support.constraint.ConstraintLayout>
