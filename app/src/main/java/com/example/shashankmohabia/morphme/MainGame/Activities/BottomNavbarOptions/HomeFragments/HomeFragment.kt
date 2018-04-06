@@ -1,11 +1,14 @@
-package com.example.shashankmohabia.morphme.MainGame.HomeFragments
+package com.example.shashankmohabia.morphme.MainGame.Activities.BottomNavbarOptions.HomeFragments
 
+import android.graphics.Color
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.shashankmohabia.morphme.MainGame.HomeFragments.QuestionAdapter
+import com.example.shashankmohabia.morphme.MainGame.HomeFragments.QuestionModel
 import com.example.shashankmohabia.morphme.R
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.ChildEventListener
@@ -26,6 +29,8 @@ class HomeFragment : Fragment() {
     var currentPhase = "Phase1"
     var currentLevel = "Level1"
 
+    var levelTracker = 0
+
     var i = 0
     var questionCount = 0
 
@@ -45,7 +50,6 @@ class HomeFragment : Fragment() {
         swingView?.setAdapter(questionAdapter)
         swingView?.setFlingListener(object : SwipeFlingAdapterView.onFlingListener {
             override fun removeFirstObjectInAdapter() {
-                // this is the simplest way to delete an object from the Adapter (/AdapterView)
                 Log.d("LIST", "removed object!")
                 questionList.removeAt(0)
                 questionAdapter?.notifyDataSetChanged()
@@ -73,6 +77,9 @@ class HomeFragment : Fragment() {
                     }
                 }.show()
 
+                levelTracker++
+                setLevelIndicator()
+
             }
 
             override fun onRightCardExit(dataObject: Any) {
@@ -97,6 +104,8 @@ class HomeFragment : Fragment() {
                     }
                 }.show()
 
+                levelTracker++
+                setLevelIndicator()
             }
 
             override fun onAdapterAboutToEmpty(itemsInAdapter: Int) {}
@@ -109,6 +118,23 @@ class HomeFragment : Fragment() {
         //swingView?.setOnItemClickListener(SwipeFlingAdapterView.OnItemClickListener { itemPosition, dataObject -> Toast.makeText(view?.context, "Left", Toast.LENGTH_LONG).show() })
 
 
+    }
+
+    private fun setLevelIndicator() {
+        when (levelTracker) {
+            2 -> {
+                level1.setTextColor(Color.parseColor("#FFFFFF"))
+            }
+            4 -> {
+                level2.setTextColor(Color.parseColor("#FFFFFF"))
+            }
+            6 -> {
+                level3.setTextColor(Color.parseColor("#FFFFFF"))
+            }
+            8 -> {
+                level4.setTextColor(Color.parseColor("#FFFFFF"))
+            }
+        }
     }
 
     private fun addWrongResponse(item: QuestionModel, companionQuestionAnswer: String) {

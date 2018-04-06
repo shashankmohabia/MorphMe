@@ -10,7 +10,7 @@ import com.example.shashankmohabia.morphme.Authentication.LoginActivity
 import com.example.shashankmohabia.morphme.MainGame.AdminFragments.AdminFragment
 import com.example.shashankmohabia.morphme.MainGame.Activities.BottomNavbarOptions.DashBoardFragment
 import com.example.shashankmohabia.morphme.MainGame.Activities.BottomNavbarOptions.ProfileFragment
-import com.example.shashankmohabia.morphme.MainGame.HomeFragments.HomeFragment
+import com.example.shashankmohabia.morphme.MainGame.Activities.BottomNavbarOptions.HomeFragments.HomeFragment
 import com.example.shashankmohabia.morphme.R
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
