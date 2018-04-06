@@ -26,6 +26,7 @@ MERGED from [com.android.support:animated-vector-drawable:27.1.0] C:\Users\shash
 MERGED from [com.android.support:support-vector-drawable:27.1.0] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.0.aar\5cbbb53f446fc56ff4e3f514f5a972a4\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:cardview-v7:27.1.0] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.1.0.aar\3f9f2f0e33554581266009ee40725cdd\AndroidManifest.xml:17:1-22:12
 MERGED from [com.lorentzos.swipecards:library:1.0.9] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\library-1.0.9.aar\151c883266a60fd4571440db67f1d881\AndroidManifest.xml:2:1-14:12
+MERGED from [de.hdodenhof:circleimageview:2.2.0] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\circleimageview-2.2.0.aar\a1cd70da8bbb967ff23dbcfc3bc5da1d\AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:support-fragment:27.1.0] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.0.aar\43c7bc168df7f618ad22b183eab23906\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:recyclerview-v7:27.1.0] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.0.aar\7d6f6c42b19a0d9ce881f77efb04966b\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-core-ui:27.1.0] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.0.aar\171f4101d12660306305ad00a66f12e2\AndroidManifest.xml:17:1-22:12
@@ -94,6 +95,8 @@ MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\sh
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\30085a192420beccf3fa2240e5f05f93\AndroidManifest.xml:9:5-20
 MERGED from [com.lorentzos.swipecards:library:1.0.9] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\library-1.0.9.aar\151c883266a60fd4571440db67f1d881\AndroidManifest.xml:12:5-20
 MERGED from [com.lorentzos.swipecards:library:1.0.9] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\library-1.0.9.aar\151c883266a60fd4571440db67f1d881\AndroidManifest.xml:12:5-20
+MERGED from [de.hdodenhof:circleimageview:2.2.0] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\circleimageview-2.2.0.aar\a1cd70da8bbb967ff23dbcfc3bc5da1d\AndroidManifest.xml:9:5-20
+MERGED from [de.hdodenhof:circleimageview:2.2.0] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\circleimageview-2.2.0.aar\a1cd70da8bbb967ff23dbcfc3bc5da1d\AndroidManifest.xml:9:5-20
 MERGED from [com.google.firebase:firebase-database-license:12.0.1] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\firebase-database-license-12.0.1.aar\edf76ed6e4c97bfa0566754b04903fd5\AndroidManifest.xml:22:5-20
 MERGED from [com.google.firebase:firebase-database-license:12.0.1] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\firebase-database-license-12.0.1.aar\edf76ed6e4c97bfa0566754b04903fd5\AndroidManifest.xml:22:5-20
 MERGED from [com.google.firebase:firebase-storage-license:12.0.1] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\firebase-storage-license-12.0.1.aar\06e307b149774d11144a209276ab3023\AndroidManifest.xml:22:5-20
@@ -226,6 +229,8 @@ MERGED from [com.android.support:cardview-v7:27.1.0] C:\Users\shash\.gradle\cach
 MERGED from [com.android.support:cardview-v7:27.1.0] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.1.0.aar\3f9f2f0e33554581266009ee40725cdd\AndroidManifest.xml:20:5-44
 MERGED from [com.lorentzos.swipecards:library:1.0.9] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\library-1.0.9.aar\151c883266a60fd4571440db67f1d881\AndroidManifest.xml:8:5-10:41
 MERGED from [com.lorentzos.swipecards:library:1.0.9] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\library-1.0.9.aar\151c883266a60fd4571440db67f1d881\AndroidManifest.xml:8:5-10:41
+MERGED from [de.hdodenhof:circleimageview:2.2.0] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\circleimageview-2.2.0.aar\a1cd70da8bbb967ff23dbcfc3bc5da1d\AndroidManifest.xml:5:5-7:41
+MERGED from [de.hdodenhof:circleimageview:2.2.0] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\circleimageview-2.2.0.aar\a1cd70da8bbb967ff23dbcfc3bc5da1d\AndroidManifest.xml:5:5-7:41
 MERGED from [com.android.support:support-fragment:27.1.0] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.0.aar\43c7bc168df7f618ad22b183eab23906\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-fragment:27.1.0] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.0.aar\43c7bc168df7f618ad22b183eab23906\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:recyclerview-v7:27.1.0] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.0.aar\7d6f6c42b19a0d9ce881f77efb04966b\AndroidManifest.xml:20:5-44

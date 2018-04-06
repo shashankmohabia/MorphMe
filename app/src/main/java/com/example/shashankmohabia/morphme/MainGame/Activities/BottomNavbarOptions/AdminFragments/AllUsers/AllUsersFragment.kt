@@ -1,6 +1,7 @@
 package com.example.shashankmohabia.morphme.MainGame.AdminFragments.AllUsers
 
 import android.app.ProgressDialog
+import android.graphics.drawable.ClipDrawable.HORIZONTAL
 import android.os.Bundle
 import android.os.Handler
 import android.support.v4.app.Fragment
@@ -13,6 +14,9 @@ import com.example.shashankmohabia.morphme.R
 import com.google.firebase.database.*
 import kotlinx.android.synthetic.main.fragment_all_users.*
 import java.util.ArrayList
+import android.support.v7.widget.DividerItemDecoration
+
+
 
 class AllUsersFragment : Fragment() {
 
@@ -34,6 +38,8 @@ class AllUsersFragment : Fragment() {
         allUsersRecycler.setHasFixedSize(true)
         allUsersRecycler.layoutManager = LinearLayoutManager(view.context)
         allUsersRecycler.adapter = mAdapter
+        val itemDecor = DividerItemDecoration(view.context, HORIZONTAL)
+        allUsersRecycler.addItemDecoration(itemDecor)
 
     }
 

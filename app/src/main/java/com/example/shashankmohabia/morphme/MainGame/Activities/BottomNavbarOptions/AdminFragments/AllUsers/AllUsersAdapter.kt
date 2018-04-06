@@ -14,9 +14,10 @@ import kotlinx.android.synthetic.main.all_users_item.view.*
 
 class AllUsersAdapter(private val allUsersObjectList: List<AllUsersObject>, private val context: Context) : RecyclerView.Adapter<AllUsersViewHolder>() {
     override fun onBindViewHolder(holder: AllUsersViewHolder, position: Int) {
-        holder.itemView.userId.text = allUsersObjectList[position].userID
+        //holder.itemView.userId.text = allUsersObjectList[position].userID
         holder.itemView.userName.text = allUsersObjectList[position].userName
         holder.context = context
+        holder.id = allUsersObjectList[position].userID
         when (allUsersObjectList[position].profilepicUrl) {
             "default" -> Glide.with(context).load(R.mipmap.user_male).into(holder.itemView.userPic)
             else -> Glide.with(context).load(allUsersObjectList[position].profilepicUrl).into(holder.itemView.userPic)

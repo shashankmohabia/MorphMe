@@ -21,7 +21,9 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="L1" />
+                android:text="L1"
+                android:textColor="@color/white"
+                android:visibility="invisible" />
 
             <TextView
                 android:id="@+id/level2"
@@ -29,7 +31,9 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="L2" />
+                android:text="L2"
+                android:textColor="@color/white"
+                android:visibility="invisible" />
 
             <TextView
                 android:id="@+id/level3"
@@ -37,7 +41,9 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="L3" />
+                android:text="L3"
+                android:textColor="@color/white"
+                android:visibility="invisible" />
 
             <TextView
                 android:id="@+id/level4"
@@ -45,7 +51,9 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="L4" />
+                android:text="L4"
+                android:textColor="@color/white"
+                android:visibility="invisible" />
         </LinearLayout>
 
         <com.lorentzos.flingswipe.SwipeFlingAdapterView

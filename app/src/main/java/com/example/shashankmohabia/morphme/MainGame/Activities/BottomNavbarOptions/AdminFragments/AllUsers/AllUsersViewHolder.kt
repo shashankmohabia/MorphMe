@@ -14,6 +14,7 @@ import kotlinx.android.synthetic.main.all_users_item.view.*
 class AllUsersViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView), View.OnClickListener {
 
     var context: Context? = null
+    var id:String? = null
 
     init {
         itemView.setOnClickListener(this)
@@ -22,7 +23,7 @@ class AllUsersViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView), Vi
     override fun onClick(v: View) {
 
         val intent = Intent(v.context, UserOptionsActivity::class.java)
-        intent.putExtra("id", this.itemView.userId.text)
+        intent.putExtra("id", id)
         v.context.startActivity(intent)
         //v.context.fragmentManager?.beginTransaction()?.replace(R.id.mainFrame, AllUsersFragment())?.addToBackStack(null)?.commit()
     }

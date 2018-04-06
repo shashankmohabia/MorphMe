@@ -1,6 +1,5 @@
 package com.example.shashankmohabia.morphme.MainGame.Activities.BottomNavbarOptions.HomeFragments
 
-import android.graphics.Color
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.util.Log
@@ -44,6 +43,7 @@ class HomeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         getQuestionData()
+
         questionAdapter = QuestionAdapter(view.context, R.layout.swing_item, questionList)
 
 
@@ -60,7 +60,7 @@ class HomeFragment : Fragment() {
                 alert(item.questionCompanionQuestion.toString()) {
                     title = "Fake"
                     positiveButton("Yes") {
-                        var companionQuestionAnswer = "Yes"
+                        val companionQuestionAnswer = "Yes"
                         if (item.questionAnswer.equals("Fake")) {
                             addCorrectResponse(item, companionQuestionAnswer)
                         } else {
@@ -68,7 +68,7 @@ class HomeFragment : Fragment() {
                         }
                     }
                     negativeButton("No") {
-                        var companionQuestionAnswer = "No"
+                        val companionQuestionAnswer = "No"
                         if (item.questionAnswer.equals("Fake")) {
                             addCorrectResponse(item, companionQuestionAnswer)
                         } else {
@@ -87,7 +87,7 @@ class HomeFragment : Fragment() {
                 alert(item.questionCompanionQuestion.toString()) {
                     title = " Not Fake"
                     positiveButton("Yes") {
-                        var companionQuestionAnswer = "Yes"
+                        val companionQuestionAnswer = "Yes"
                         if (item.questionAnswer.equals("Not Fake")) {
                             addCorrectResponse(item, companionQuestionAnswer)
                         } else {
@@ -95,7 +95,7 @@ class HomeFragment : Fragment() {
                         }
                     }
                     negativeButton("No") {
-                        var companionQuestionAnswer = "No"
+                        val companionQuestionAnswer = "No"
                         if (item.questionAnswer.equals("Not Fake")) {
                             addCorrectResponse(item, companionQuestionAnswer)
                         } else {
@@ -123,16 +123,16 @@ class HomeFragment : Fragment() {
     private fun setLevelIndicator() {
         when (levelTracker) {
             2 -> {
-                level1.setTextColor(Color.parseColor("#FFFFFF"))
+                level1.visibility = View.VISIBLE
             }
             4 -> {
-                level2.setTextColor(Color.parseColor("#FFFFFF"))
+                level2.visibility = View.VISIBLE
             }
             6 -> {
-                level3.setTextColor(Color.parseColor("#FFFFFF"))
+                level3.visibility = View.VISIBLE
             }
             8 -> {
-                level4.setTextColor(Color.parseColor("#FFFFFF"))
+                level4.visibility = View.VISIBLE
             }
         }
     }
@@ -155,25 +155,23 @@ class HomeFragment : Fragment() {
 
         val questionDb = FirebaseDatabase.getInstance().reference.child("Questions")
         questionDb.addChildEventListener(object : ChildEventListener {
+
+
             override fun onChildAdded(dataSnapshot: DataSnapshot?, p1: String?) {
                 if (dataSnapshot != null) {
-                    // and (dataSnapshot.child("phase").value == currentPhase) and (dataSnapshot.child("level").value == currentLevel)
-                    if (dataSnapshot.exists()) {
+                    if (dataSnapshot.exists() and ((dataSnapshot.child("phase").value == currentPhase) and (dataSnapshot.child("level").value == currentLevel))) {
                         val id = dataSnapshot.key
                         val caption = dataSnapshot.child("caption")?.value!!.toString()
                         val answer = dataSnapshot.child("answer")?.value!!.toString()
                         val companionQuestion = dataSnapshot.child("companionQuestion")?.value!!.toString()
                         val mediaDownloadUri = dataSnapshot.child("mediaDownloadUri")?.value!!.toString()
                         val item = QuestionModel(id, caption, answer, companionQuestion, mediaDownloadUri)
-                        questionList.add(item)
-                        questionAdapter?.notifyDataSetChanged()
 
 
                         questionCount++
                         when (questionCount) {
                             2 -> {
                                 currentLevel = "Level2"
-                                //toast("Level 2")
                             }
                             4 -> {
                                 currentLevel = "Level3"
@@ -185,11 +183,16 @@ class HomeFragment : Fragment() {
                                 //toast("Level 4")
                             }
                         }
+
+                        questionList.add(item)
+                        questionAdapter?.notifyDataSetChanged()
                     } else {
-                        toast("No questions available for current Level")
+                        toast("No questions available for $currentLevel")
+                        questionCount = 10
                     }
                 } else {
                     toast("No questions available")
+                    questionCount = 10
                 }
             }
 
@@ -198,6 +201,7 @@ class HomeFragment : Fragment() {
             override fun onChildMoved(p0: DataSnapshot?, p1: String?) {}
             override fun onChildChanged(p0: DataSnapshot?, p1: String?) {}
             override fun onChildRemoved(p0: DataSnapshot?) {}
+
         })
     }
 
