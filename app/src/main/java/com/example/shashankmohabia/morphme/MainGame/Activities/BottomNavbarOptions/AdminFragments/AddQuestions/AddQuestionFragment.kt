@@ -89,7 +89,7 @@ class AddQuestionFragment : Fragment() {
                         questionDb.updateChildren(questionInfo)
                         questionAdditionError.visibility = View.INVISIBLE
                         if (resultImageURI != null) {
-                            val filepath = FirebaseStorage.getInstance().reference.child("QuestionMedias").child(key)
+                            val filepath = FirebaseStorage.getInstance().reference.child("QuestionMedia").child(key)
                             var bitmap: Bitmap? = null
 
                             try {

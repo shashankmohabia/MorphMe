@@ -10,28 +10,20 @@ import com.example.shashankmohabia.morphme.MainGame.HomeFragments.QuestionAdapte
 import com.example.shashankmohabia.morphme.MainGame.HomeFragments.QuestionModel
 import com.example.shashankmohabia.morphme.R
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.database.ChildEventListener
-import com.google.firebase.database.DataSnapshot
-import com.google.firebase.database.DatabaseError
-import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.*
 import com.lorentzos.flingswipe.SwipeFlingAdapterView
 import kotlinx.android.synthetic.main.fragment_home.*
 import org.jetbrains.anko.support.v4.alert
-import org.jetbrains.anko.support.v4.toast
-import java.util.ArrayList
+import java.util.*
 
 class HomeFragment : Fragment() {
 
-    var questionList: ArrayList<QuestionModel> = ArrayList()
+    var allQuestionList: ArrayList<QuestionModel> = ArrayList()
+    var finalQuestionList: ArrayList<QuestionModel> = ArrayList()
     var questionAdapter: QuestionAdapter? = null
 
-    var currentPhase = "Phase1"
-    var currentLevel = "Level1"
-
     var levelTracker = 0
-
-    var i = 0
-    var questionCount = 0
+    var questionPerLevel = 2
 
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
@@ -41,17 +33,70 @@ class HomeFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
         getQuestionData()
+        questionAdapter = QuestionAdapter(view.context, R.layout.swing_item, finalQuestionList)
 
-        questionAdapter = QuestionAdapter(view.context, R.layout.swing_item, questionList)
+        setSwingCards()
+    }
 
+    private fun getUserQuestionData() {
 
+        finalQuestionList.clear()
+
+        var level = "Level1"
+        var i = 0
+        for (q in allQuestionList) {
+            if (q.questionLevel.equals(level) && i < questionPerLevel) {
+                finalQuestionList.add(q)
+                questionAdapter?.notifyDataSetChanged()
+                i++
+                when (finalQuestionList.size) {
+                    questionPerLevel -> {level = "Level2"; i=0}
+                    2*questionPerLevel -> {level = "Level3"; i=0}
+                    3*questionPerLevel -> {level = "Level4"; i=0}
+                }
+            }
+
+            //Log.d("final", "Size: "+finalQuestionList.size.toString()+" i"+i)
+        }
+
+        /*var EXITCODE: Boolean = true
+        while (questionCount < 8) {
+            //Log.d("final", questionCount.toString())
+            for (question in allQuestionList) {
+                //Log.d("final", " second "+questionCount.toString())
+                Log.d("final", "Phase: " + question.questionPhase + " Level: " + question.questionLevel)
+                Log.d("final", "CPhase: " + currentPhase + " CLevel: " + currentLevel)
+                if (question.questionPhase.equals(currentPhase) and question.questionLevel.equals(currentLevel) and EXITCODE) {
+                    finalQuestionList.add(question)
+                    questionCount++
+                    //Log.d("final", currentPhase + " " + currentLevel)
+                    when (questionCount) {
+                        2 -> currentLevel = "Level2"
+                        4 -> currentLevel = "Level3"
+                        6 -> {
+                            currentLevel = "Level4"
+                            currentPhase = "Phase2"
+                        }
+                        8 -> EXITCODE = false
+                    }
+                    Log.d("final", currentPhase + " " + currentLevel)
+                    continue
+                } else {
+                    break
+                }
+            }
+        }*/
+
+        //Log.d("final", finalQuestionList.size.toString())
+    }
+
+    private fun setSwingCards() {
         swingView?.setAdapter(questionAdapter)
         swingView?.setFlingListener(object : SwipeFlingAdapterView.onFlingListener {
             override fun removeFirstObjectInAdapter() {
                 Log.d("LIST", "removed object!")
-                questionList.removeAt(0)
+                finalQuestionList.removeAt(0)
                 questionAdapter?.notifyDataSetChanged()
             }
 
@@ -154,55 +199,63 @@ class HomeFragment : Fragment() {
     private fun getQuestionData() {
 
         val questionDb = FirebaseDatabase.getInstance().reference.child("Questions")
-        questionDb.addChildEventListener(object : ChildEventListener {
+        questionDb.addListenerForSingleValueEvent(object : ValueEventListener {
 
-
-            override fun onChildAdded(dataSnapshot: DataSnapshot?, p1: String?) {
+            override fun onDataChange(dataSnapshot: DataSnapshot?) {
                 if (dataSnapshot != null) {
-                    if (dataSnapshot.exists() and ((dataSnapshot.child("phase").value == currentPhase) and (dataSnapshot.child("level").value == currentLevel))) {
-                        val id = dataSnapshot.key
-                        val caption = dataSnapshot.child("caption")?.value!!.toString()
-                        val answer = dataSnapshot.child("answer")?.value!!.toString()
-                        val companionQuestion = dataSnapshot.child("companionQuestion")?.value!!.toString()
-                        val mediaDownloadUri = dataSnapshot.child("mediaDownloadUri")?.value!!.toString()
-                        val item = QuestionModel(id, caption, answer, companionQuestion, mediaDownloadUri)
+                    if (dataSnapshot.exists()) {
+                        Log.d("allizom", dataSnapshot.value.toString())
+                        for (question in dataSnapshot.children) {
+                            Log.d("allizom", question.child("caption").value.toString())
+                            allQuestionList.add(
+                                    QuestionModel(
+                                            questionId = question.key,
+                                            questionCaption = question.child("caption").value.toString(),
+                                            questionAnswer = question.child("answer").value.toString(),
+                                            questionCompanionQuestion = question.child("companionQuestion").value.toString(),
+                                            questionMediaURL = question.child("mediaDownloadUri").value.toString(),
+                                            questionPhase = question.child("phase").value.toString(),
+                                            questionLevel = question.child("level").value.toString()
+                                    )
+                            )
 
-
-                        questionCount++
-                        when (questionCount) {
-                            2 -> {
-                                currentLevel = "Level2"
-                            }
-                            4 -> {
-                                currentLevel = "Level3"
-                                // toast("Level 3")
-                            }
-                            6 -> {
-                                currentPhase = "Phase2"
-                                currentLevel = "Level4"
-                                //toast("Level 4")
-                            }
                         }
-
-                        questionList.add(item)
-                        questionAdapter?.notifyDataSetChanged()
-                    } else {
-                        toast("No questions available for $currentLevel")
-                        questionCount = 10
                     }
-                } else {
-                    toast("No questions available")
-                    questionCount = 10
                 }
+
+                Log.d("final", allQuestionList.size.toString())
+
+                Collections.sort(allQuestionList, getCompByLevel())
+
+                for (q in allQuestionList) {
+                    Log.d("final", "" + q.questionLevel)
+                }
+
+
+                getUserQuestionData()
+
+                for (q in finalQuestionList) {
+                    Log.d("final", "" + q.questionLevel)
+                }
+
+
+
+
+
             }
 
-
             override fun onCancelled(p0: DatabaseError?) {}
-            override fun onChildMoved(p0: DataSnapshot?, p1: String?) {}
-            override fun onChildChanged(p0: DataSnapshot?, p1: String?) {}
-            override fun onChildRemoved(p0: DataSnapshot?) {}
-
         })
+
+
+    }
+
+    fun getCompByLevel(): Comparator<QuestionModel> {
+        return object : Comparator<QuestionModel> {
+            override fun compare(s1: QuestionModel, s2: QuestionModel): Int {
+                return s1.questionLevel.compareTo(s2.questionLevel)
+            }
+        }
     }
 
 }

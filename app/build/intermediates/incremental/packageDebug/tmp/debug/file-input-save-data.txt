@@ -1,11 +1,7 @@
 #Internal package file, do not edit.
-#Fri Apr 06 17:14:20 IST 2018
-1.base=S\:\\DevD\\MorphMe\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\12
+#Sun Apr 08 00:06:22 IST 2018
 0.baseType=DIRECTORY
-1.baseType=DIRECTORY
-count=2
-1.set=DEX
+0.base=S\:\\DevD\\MorphMe\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\15
 0.path=classes.dex
 0.set=DEX
-0.base=S\:\\DevD\\MorphMe\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\13
-1.path=classes.dex
+count=1
