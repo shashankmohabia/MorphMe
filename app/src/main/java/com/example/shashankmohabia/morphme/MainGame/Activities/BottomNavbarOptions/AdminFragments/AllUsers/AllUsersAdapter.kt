@@ -16,6 +16,7 @@ class AllUsersAdapter(private val allUsersObjectList: List<AllUsersObject>, priv
     override fun onBindViewHolder(holder: AllUsersViewHolder, position: Int) {
         //holder.itemView.userId.text = allUsersObjectList[position].userID
         holder.itemView.userName.text = allUsersObjectList[position].userName
+        holder.itemView.userScore.text = allUsersObjectList[position].totalScore.toString()
         holder.context = context
         holder.id = allUsersObjectList[position].userID
         when (allUsersObjectList[position].profilepicUrl) {

@@ -27,17 +27,17 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_weight="90"
+            android:layout_weight="80"
             android:text="User's Name"
             android:textColor="@color/white"
-            android:textSize="15sp" />
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/userScore"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="10"
-            android:text="30"
+            android:layout_weight="20"
+            android:text="300"
             android:textColor="@color/white"
             android:textSize="15sp" />
     </LinearLayout>

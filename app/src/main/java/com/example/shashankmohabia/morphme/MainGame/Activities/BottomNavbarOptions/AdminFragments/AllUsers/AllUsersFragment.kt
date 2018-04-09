@@ -17,7 +17,6 @@ import java.util.ArrayList
 import android.support.v7.widget.DividerItemDecoration
 
 
-
 class AllUsersFragment : Fragment() {
 
     private val allUsersObjectArrayList = ArrayList<AllUsersObject>()
@@ -91,8 +90,10 @@ class AllUsersFragment : Fragment() {
                         profilePicUrl = dataSnapshot.child("profilePicUrl").value!!.toString()
                     }
 
+                    var phase1Score = dataSnapshot.child("scorePhase1").value as Long
+                    var phase2Score = dataSnapshot.child("scorePhase2").value as Long
 
-                    val obj = AllUsersObject(userId, name, profilePicUrl)
+                    val obj = AllUsersObject(userId, name, profilePicUrl, phase1Score + phase2Score)
                     allUsersObjectArrayList.add(obj)
                     mAdapter?.notifyDataSetChanged()
                 }
