@@ -22,8 +22,13 @@ class HomeFragment : Fragment() {
     var finalQuestionList: ArrayList<QuestionModel> = ArrayList()
     var questionAdapter: QuestionAdapter? = null
 
+    var userDb = FirebaseDatabase.getInstance().reference.child("Users").child(FirebaseAuth.getInstance().currentUser?.uid)
+
     var levelTracker = 0
     var questionPerLevel = 2
+    var currentLevel = "Level1"
+    var phase1Score = 0
+    var phase2Score = 0
 
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
@@ -33,27 +38,48 @@ class HomeFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        getCurrentUserLevel()
         getQuestionData()
         questionAdapter = QuestionAdapter(view.context, R.layout.swing_item, finalQuestionList)
-
         setSwingCards()
     }
 
+    private fun getCurrentUserLevel() {
+        userDb.child("currentLevel").addListenerForSingleValueEvent(object : ValueEventListener {
+            override fun onCancelled(p0: DatabaseError?) {}
+
+            override fun onDataChange(dataSnapshot: DataSnapshot?) {
+                if (dataSnapshot != null) {
+                    if (dataSnapshot.exists()) {
+                        currentLevel = dataSnapshot.value.toString()
+                    }
+                }
+            }
+        })
+    }
+
     private fun getUserQuestionData() {
-
+        //Log.d("final", currentLevel)
+        updateLevelTracker()
+        setLevelIndicator()
+        //Log.d("final", levelTracker.toString())
         finalQuestionList.clear()
-
-        var level = "Level1"
         var i = 0
         for (q in allQuestionList) {
-            if (q.questionLevel.equals(level) && i < questionPerLevel) {
+            if (q.questionLevel.equals(currentLevel) && i < questionPerLevel) {
                 finalQuestionList.add(q)
                 questionAdapter?.notifyDataSetChanged()
                 i++
                 when (finalQuestionList.size) {
-                    questionPerLevel -> {level = "Level2"; i=0}
-                    2*questionPerLevel -> {level = "Level3"; i=0}
-                    3*questionPerLevel -> {level = "Level4"; i=0}
+                    questionPerLevel - levelTracker -> {
+                        currentLevel = "Level2"; i = 0
+                    }
+                    2 * questionPerLevel - levelTracker -> {
+                        currentLevel = "Level3"; i = 0
+                    }
+                    3 * questionPerLevel - levelTracker -> {
+                        currentLevel = "Level4"; i = 0
+                    }
                 }
             }
 
@@ -91,7 +117,26 @@ class HomeFragment : Fragment() {
         //Log.d("final", finalQuestionList.size.toString())
     }
 
+    private fun updateLevelTracker() {
+        when (currentLevel) {
+            "Level1" -> {
+                levelTracker = 0
+            }
+            "Level2" -> {
+                levelTracker = questionPerLevel
+            }
+            "Level3" -> {
+                levelTracker = questionPerLevel * 2
+            }
+            "Level4" -> {
+                levelTracker = questionPerLevel * 3
+            }
+        }
+
+    }
+
     private fun setSwingCards() {
+
         swingView?.setAdapter(questionAdapter)
         swingView?.setFlingListener(object : SwipeFlingAdapterView.onFlingListener {
             override fun removeFirstObjectInAdapter() {
@@ -124,6 +169,7 @@ class HomeFragment : Fragment() {
 
                 levelTracker++
                 setLevelIndicator()
+                updateUserLevel()
 
             }
 
@@ -151,6 +197,7 @@ class HomeFragment : Fragment() {
 
                 levelTracker++
                 setLevelIndicator()
+                updateUserLevel()
             }
 
             override fun onAdapterAboutToEmpty(itemsInAdapter: Int) {}
@@ -166,31 +213,58 @@ class HomeFragment : Fragment() {
     }
 
     private fun setLevelIndicator() {
+        //Log.d("final", levelTracker.toString())
         when (levelTracker) {
-            2 -> {
+            questionPerLevel -> {
                 level1.visibility = View.VISIBLE
             }
-            4 -> {
+            questionPerLevel * 2 -> {
+                level1.visibility = View.VISIBLE
                 level2.visibility = View.VISIBLE
             }
-            6 -> {
+            questionPerLevel * 3 -> {
+                level1.visibility = View.VISIBLE
+                level2.visibility = View.VISIBLE
                 level3.visibility = View.VISIBLE
             }
-            8 -> {
+            questionPerLevel * 4 -> {
+                level1.visibility = View.VISIBLE
+                level2.visibility = View.VISIBLE
+                level3.visibility = View.VISIBLE
                 level4.visibility = View.VISIBLE
             }
         }
     }
 
+    private fun updateUserLevel() {
+        val userLevelInfo: MutableMap<String, Any> = mutableMapOf()
+        when (levelTracker) {
+            questionPerLevel -> {
+                userLevelInfo.put("currentLevel", "Level2")
+            }
+            questionPerLevel * 2 -> {
+                userLevelInfo.put("currentLevel", "Level3")
+            }
+            questionPerLevel * 3 -> {
+                userLevelInfo.put("currentLevel", "Level4")
+            }
+            questionPerLevel * 4 -> {
+                userLevelInfo.put("currentLevel", "done")
+            }
+        }
+        userDb.updateChildren(userLevelInfo)
+    }
+
+
     private fun addWrongResponse(item: QuestionModel, companionQuestionAnswer: String) {
-        val dbRefer = FirebaseDatabase.getInstance().reference.child("Users").child(FirebaseAuth.getInstance().currentUser?.uid).child("Responses").child("Wrong").child(item.questionId)
+        val dbRefer = userDb.child("Responses").child("Wrong").child(item.questionId)
         val questionInfo: MutableMap<String, Any> = mutableMapOf()
         questionInfo.put("companionQuestionResponse", companionQuestionAnswer)
         dbRefer.updateChildren(questionInfo)
     }
 
     private fun addCorrectResponse(item: QuestionModel, companionQuestionAnswer: String) {
-        val dbRefer = FirebaseDatabase.getInstance().reference.child("Users").child(FirebaseAuth.getInstance().currentUser?.uid).child("Responses").child("Correct").child(item.questionId)
+        val dbRefer = userDb.child("Responses").child("Correct").child(item.questionId)
         val questionInfo: MutableMap<String, Any> = mutableMapOf()
         questionInfo.put("companionQuestionResponse", companionQuestionAnswer)
         dbRefer.updateChildren(questionInfo)
@@ -223,23 +297,19 @@ class HomeFragment : Fragment() {
                     }
                 }
 
-                Log.d("final", allQuestionList.size.toString())
+                //Log.d("final", allQuestionList.size.toString())
 
                 Collections.sort(allQuestionList, getCompByLevel())
 
-                for (q in allQuestionList) {
+                /*for (q in allQuestionList) {
                     Log.d("final", "" + q.questionLevel)
-                }
-
+                }*/
 
                 getUserQuestionData()
 
                 for (q in finalQuestionList) {
                     Log.d("final", "" + q.questionLevel)
                 }
-
-
-
 
 
             }
