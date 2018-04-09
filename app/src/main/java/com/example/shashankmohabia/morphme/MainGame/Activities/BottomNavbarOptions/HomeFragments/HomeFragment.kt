@@ -14,6 +14,8 @@ import com.google.firebase.database.*
 import com.lorentzos.flingswipe.SwipeFlingAdapterView
 import kotlinx.android.synthetic.main.fragment_home.*
 import org.jetbrains.anko.support.v4.alert
+import java.lang.Math.ceil
+import java.lang.Math.floor
 import java.util.*
 
 class HomeFragment : Fragment() {
@@ -27,8 +29,9 @@ class HomeFragment : Fragment() {
     var levelTracker = 0
     var questionPerLevel = 2
     var currentLevel = "Level1"
-    var phase1Score = 0
-    var phase2Score = 0
+    var phase1Score:Long = 0
+    var phase2Score:Long = 0
+    val scoreArray = intArrayOf(10, 10, 20, 20, 30, 30, 40, 40)
 
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
@@ -38,20 +41,23 @@ class HomeFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        getCurrentUserLevel()
+        getCurrentUserLevelAndScore()
         getQuestionData()
         questionAdapter = QuestionAdapter(view.context, R.layout.swing_item, finalQuestionList)
         setSwingCards()
     }
 
-    private fun getCurrentUserLevel() {
-        userDb.child("currentLevel").addListenerForSingleValueEvent(object : ValueEventListener {
+    private fun getCurrentUserLevelAndScore() {
+        userDb.addListenerForSingleValueEvent(object : ValueEventListener {
             override fun onCancelled(p0: DatabaseError?) {}
 
             override fun onDataChange(dataSnapshot: DataSnapshot?) {
                 if (dataSnapshot != null) {
                     if (dataSnapshot.exists()) {
-                        currentLevel = dataSnapshot.value.toString()
+                        currentLevel = dataSnapshot.child("currentLevel").value.toString()
+                        phase1Score = dataSnapshot.child("scorePhase1").value as Long
+                        phase2Score = dataSnapshot.child("scorePhase2").value as Long
+
                     }
                 }
             }
@@ -62,7 +68,8 @@ class HomeFragment : Fragment() {
         //Log.d("final", currentLevel)
         updateLevelTracker()
         setLevelIndicator()
-        //Log.d("final", levelTracker.toString())
+       /* Log.d("final", phase1Score.toString())
+        Log.d("final", phase2Score.toString())*/
         finalQuestionList.clear()
         var i = 0
         for (q in allQuestionList) {
@@ -255,7 +262,6 @@ class HomeFragment : Fragment() {
         userDb.updateChildren(userLevelInfo)
     }
 
-
     private fun addWrongResponse(item: QuestionModel, companionQuestionAnswer: String) {
         val dbRefer = userDb.child("Responses").child("Wrong").child(item.questionId)
         val questionInfo: MutableMap<String, Any> = mutableMapOf()
@@ -264,10 +270,26 @@ class HomeFragment : Fragment() {
     }
 
     private fun addCorrectResponse(item: QuestionModel, companionQuestionAnswer: String) {
+        updateScore()
         val dbRefer = userDb.child("Responses").child("Correct").child(item.questionId)
         val questionInfo: MutableMap<String, Any> = mutableMapOf()
         questionInfo.put("companionQuestionResponse", companionQuestionAnswer)
         dbRefer.updateChildren(questionInfo)
+    }
+
+    private fun updateScore() {
+        //Log.d("final", levelTracker.toString())
+        if(levelTracker > 6){
+            //Log.d("final", scoreArray[levelTracker-1].toString())
+            phase2Score += scoreArray[levelTracker-1]
+        }else{
+            //Log.d("final", scoreArray[levelTracker-1].toString())
+            phase1Score += scoreArray[levelTracker-1]
+        }
+        val scoreInfo: MutableMap<String, Any> = mutableMapOf()
+        scoreInfo.put("scorePhase1", phase1Score)
+        scoreInfo.put("scorePhase2", phase2Score)
+        userDb.updateChildren(scoreInfo)
     }
 
     private fun getQuestionData() {
