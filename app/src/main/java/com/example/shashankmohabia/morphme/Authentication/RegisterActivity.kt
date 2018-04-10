@@ -15,7 +15,7 @@ import kotlinx.android.synthetic.main.activity_register.*
 
 class RegisterActivity : AppCompatActivity() {
 
-    var gender:String? = null
+    var gender: String? = null
     private var mAuth: FirebaseAuth? = null
     private var firebaseAuthStateListener: FirebaseAuth.AuthStateListener? = null
 
@@ -51,6 +51,9 @@ class RegisterActivity : AppCompatActivity() {
                         userInfo.put("superUserStatus", "no")
                         userInfo.put("gender", gender.toString())
                         userInfo.put("profilePicUrl", "default")
+                        userInfo.put("currentLevel", "Level1")
+                        userInfo.put("scorePhase1", 0)
+                        userInfo.put("scorePhase2", 0)
                         dbRefer.updateChildren(userInfo)
                     }
                 })

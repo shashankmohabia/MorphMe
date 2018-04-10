@@ -29,8 +29,8 @@ class HomeFragment : Fragment() {
     var levelTracker = 0
     var questionPerLevel = 2
     var currentLevel = "Level1"
-    var phase1Score:Long = 0
-    var phase2Score:Long = 0
+    var phase1Score: Long = 0
+    var phase2Score: Long = 0
     val scoreArray = intArrayOf(10, 10, 20, 20, 30, 30, 40, 40)
 
 
@@ -68,8 +68,8 @@ class HomeFragment : Fragment() {
         //Log.d("final", currentLevel)
         updateLevelTracker()
         setLevelIndicator()
-       /* Log.d("final", phase1Score.toString())
-        Log.d("final", phase2Score.toString())*/
+        /* Log.d("final", phase1Score.toString())
+         Log.d("final", phase2Score.toString())*/
         finalQuestionList.clear()
         var i = 0
         for (q in allQuestionList) {
@@ -279,17 +279,19 @@ class HomeFragment : Fragment() {
 
     private fun updateScore() {
         //Log.d("final", levelTracker.toString())
-        if(levelTracker > 6){
+        if (levelTracker > 6) {
             //Log.d("final", scoreArray[levelTracker-1].toString())
-            phase2Score += scoreArray[levelTracker-1]
-        }else{
+            phase2Score += scoreArray[levelTracker - 1]
+        } else {
             //Log.d("final", scoreArray[levelTracker-1].toString())
-            phase1Score += scoreArray[levelTracker-1]
+            phase1Score += scoreArray[levelTracker - 1]
         }
+
         val scoreInfo: MutableMap<String, Any> = mutableMapOf()
         scoreInfo.put("scorePhase1", phase1Score)
         scoreInfo.put("scorePhase2", phase2Score)
         userDb.updateChildren(scoreInfo)
+
     }
 
     private fun getQuestionData() {
