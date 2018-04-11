@@ -22,10 +22,10 @@ public final class R {
         public static final int abc_action_bar_embed_tabs = 0x7f040000;
     }
     public static final class color {
-        public static final int notification_action_color_filter = 0x7f050063;
-        public static final int notification_icon_bg_color = 0x7f050064;
-        public static final int ripple_material_light = 0x7f050070;
-        public static final int secondary_text_default_material_light = 0x7f050072;
+        public static final int notification_action_color_filter = 0x7f050065;
+        public static final int notification_icon_bg_color = 0x7f050066;
+        public static final int ripple_material_light = 0x7f050073;
+        public static final int secondary_text_default_material_light = 0x7f050075;
     }
     public static final class dimen {
         public static final int compat_button_inset_horizontal_material = 0x7f060053;
@@ -71,7 +71,7 @@ public final class R {
         public static final int actions = 0x7f08001a;
         public static final int async = 0x7f080029;
         public static final int blocking = 0x7f080035;
-        public static final int chronometer = 0x7f080046;
+        public static final int chronometer = 0x7f080047;
         public static final int forever = 0x7f080070;
         public static final int icon = 0x7f080075;
         public static final int icon_group = 0x7f080076;

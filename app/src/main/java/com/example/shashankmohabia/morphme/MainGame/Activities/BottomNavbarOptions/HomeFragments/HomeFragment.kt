@@ -31,6 +31,7 @@ class HomeFragment : Fragment() {
     var currentLevel = "Level1"
     var phase1Score: Long = 0
     var phase2Score: Long = 0
+    var presentLevel: String? = null
     val scoreArray = intArrayOf(10, 10, 20, 20, 30, 30, 40, 40)
 
 
@@ -93,33 +94,6 @@ class HomeFragment : Fragment() {
             //Log.d("final", "Size: "+finalQuestionList.size.toString()+" i"+i)
         }
 
-        /*var EXITCODE: Boolean = true
-        while (questionCount < 8) {
-            //Log.d("final", questionCount.toString())
-            for (question in allQuestionList) {
-                //Log.d("final", " second "+questionCount.toString())
-                Log.d("final", "Phase: " + question.questionPhase + " Level: " + question.questionLevel)
-                Log.d("final", "CPhase: " + currentPhase + " CLevel: " + currentLevel)
-                if (question.questionPhase.equals(currentPhase) and question.questionLevel.equals(currentLevel) and EXITCODE) {
-                    finalQuestionList.add(question)
-                    questionCount++
-                    //Log.d("final", currentPhase + " " + currentLevel)
-                    when (questionCount) {
-                        2 -> currentLevel = "Level2"
-                        4 -> currentLevel = "Level3"
-                        6 -> {
-                            currentLevel = "Level4"
-                            currentPhase = "Phase2"
-                        }
-                        8 -> EXITCODE = false
-                    }
-                    Log.d("final", currentPhase + " " + currentLevel)
-                    continue
-                } else {
-                    break
-                }
-            }
-        }*/
 
         //Log.d("final", finalQuestionList.size.toString())
     }
@@ -221,24 +195,29 @@ class HomeFragment : Fragment() {
 
     private fun setLevelIndicator() {
         //Log.d("final", levelTracker.toString())
+
         when (levelTracker) {
             questionPerLevel -> {
                 level1.visibility = View.VISIBLE
+                presentLevel = "Level 1"
             }
             questionPerLevel * 2 -> {
                 level1.visibility = View.VISIBLE
                 level2.visibility = View.VISIBLE
+                presentLevel = "Level 2"
             }
             questionPerLevel * 3 -> {
                 level1.visibility = View.VISIBLE
                 level2.visibility = View.VISIBLE
                 level3.visibility = View.VISIBLE
+                presentLevel = "Level 3"
             }
             questionPerLevel * 4 -> {
                 level1.visibility = View.VISIBLE
                 level2.visibility = View.VISIBLE
                 level3.visibility = View.VISIBLE
                 level4.visibility = View.VISIBLE
+                presentLevel = "Level 4"
             }
         }
     }
@@ -267,6 +246,7 @@ class HomeFragment : Fragment() {
         val questionInfo: MutableMap<String, Any> = mutableMapOf()
         questionInfo.put("companionQuestionResponse", companionQuestionAnswer)
         dbRefer.updateChildren(questionInfo)
+        levelCompletionMessage()
     }
 
     private fun addCorrectResponse(item: QuestionModel, companionQuestionAnswer: String) {
@@ -275,6 +255,16 @@ class HomeFragment : Fragment() {
         val questionInfo: MutableMap<String, Any> = mutableMapOf()
         questionInfo.put("companionQuestionResponse", companionQuestionAnswer)
         dbRefer.updateChildren(questionInfo)
+        levelCompletionMessage()
+    }
+
+    private fun levelCompletionMessage() {
+        if (levelTracker % questionPerLevel == 0) {
+            alert {
+                message = "You have successfully completed " + presentLevel
+                title = "Congratulations"
+            }.show()
+        }
     }
 
     private fun updateScore() {
@@ -351,7 +341,4 @@ class HomeFragment : Fragment() {
             }
         }
     }
-
 }
-
-

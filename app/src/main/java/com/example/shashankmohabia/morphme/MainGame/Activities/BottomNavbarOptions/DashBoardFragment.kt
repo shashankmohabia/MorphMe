@@ -1,5 +1,6 @@
 package com.example.shashankmohabia.morphme.MainGame.Activities.BottomNavbarOptions
 
+import android.graphics.Color
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.util.Log
@@ -13,6 +14,18 @@ import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
 import kotlinx.android.synthetic.main.fragment_dashboard.*
+import com.github.mikephil.charting.components.Legend
+import android.graphics.Typeface
+import com.github.mikephil.charting.charts.PieChart
+import android.text.style.ForegroundColorSpan
+import android.text.style.RelativeSizeSpan
+import android.text.SpannableString
+import com.example.shashankmohabia.morphme.MainGame.HomeFragments.QuestionModel
+import com.github.mikephil.charting.data.PieData
+import com.github.mikephil.charting.data.PieDataSet
+import com.github.mikephil.charting.data.PieEntry
+import java.util.ArrayList
+
 
 class DashBoardFragment : Fragment() {
 
@@ -34,7 +47,63 @@ class DashBoardFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         calculateScore()
+        showPieChart()
+    }
 
+    private fun showPieChart() {
+        chart1.description.isEnabled = false
+
+        val tf = Typeface.createFromAsset(activity!!.assets, "OpenSans-Light.ttf")
+
+        chart1.setCenterTextTypeface(tf)
+        chart1.centerText = generateCenterText()
+        chart1.setCenterTextSize(10f)
+        chart1.setCenterTextTypeface(tf)
+
+        // radius of the center hole in percent of maximum radius
+        chart1.holeRadius = 65f
+        chart1.transparentCircleRadius = 50f
+
+        val l = chart1.getLegend()
+        l.verticalAlignment = Legend.LegendVerticalAlignment.TOP
+        l.horizontalAlignment = Legend.LegendHorizontalAlignment.RIGHT
+        l.orientation = Legend.LegendOrientation.VERTICAL
+        l.setDrawInside(false)
+
+        chart1.data = generatePieData()
+
+        chart1.invalidate();
+    }
+
+    private fun generatePieData(): PieData? {
+        val entries: ArrayList<PieEntry> = ArrayList()
+
+        entries.add(PieEntry(18.5f, "Level 1"))
+        entries.add(PieEntry(26.7f, "Level 2"))
+        entries.add(PieEntry(24.0f, "Level 3"))
+        entries.add(PieEntry(30.8f, "Level 4"))
+
+        val set = PieDataSet(entries, "")
+        val MY_COLORS = intArrayOf(
+                view!!.context.getResources().getColor(R.color.red),
+                view!!.context.getResources().getColor(R.color.blue),
+                view!!.context.getResources().getColor(R.color.green),
+                view!!.context.getResources().getColor(R.color.yellow)
+                )
+        val colors = ArrayList<Int>()
+
+        for (c in MY_COLORS) colors.add(c)
+
+        set.colors = colors
+        val data = PieData(set)
+        return data
+    }
+
+    private fun generateCenterText(): SpannableString? {
+        val s = SpannableString("Score\nSummary")
+        s.setSpan(RelativeSizeSpan(2f), 0, 8, 0)
+        s.setSpan(ForegroundColorSpan(Color.GRAY), 8, s.length, 0)
+        return s
     }
 
     private fun showScore() {
@@ -53,7 +122,7 @@ class DashBoardFragment : Fragment() {
                     if (dataSnapshot.exists()) {
                         phase1Score = dataSnapshot.child("scorePhase1").value as Long
                         phase2Score = dataSnapshot.child("scorePhase2").value as Long
-                       // Log.d("dash", phase1Score.toString())
+                        // Log.d("dash", phase1Score.toString())
                         showScore()
                     }
                 }

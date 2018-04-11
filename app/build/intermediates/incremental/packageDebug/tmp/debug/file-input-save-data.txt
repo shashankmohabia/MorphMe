@@ -1,7 +1,11 @@
 #Internal package file, do not edit.
-#Sun Apr 08 00:06:22 IST 2018
+#Wed Apr 11 14:29:50 IST 2018
+1.base=S\:\\DevD\\MorphMe\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
 0.baseType=DIRECTORY
-0.base=S\:\\DevD\\MorphMe\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\15
-0.path=classes.dex
-0.set=DEX
-count=1
+1.baseType=DIRECTORY
+count=2
+1.set=DEX
+0.path=OpenSans-Light.ttf
+0.set=ASSET
+0.base=S\:\\DevD\\MorphMe\\app\\build\\intermediates\\assets\\debug
+1.path=classes.dex

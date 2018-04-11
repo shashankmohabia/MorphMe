@@ -14,4 +14,8 @@
     <color name="endblue">#0bcce6</color>
     <color name="dialog">#454656</color>
     <color name="error">#ff032d</color>
+    <color name="red">#ff1744</color>
+    <color name="blue">#4757c1</color>
+    <color name="green">#4d993e</color>
+    <color name="yellow">#ffd600</color>
 </resources>
