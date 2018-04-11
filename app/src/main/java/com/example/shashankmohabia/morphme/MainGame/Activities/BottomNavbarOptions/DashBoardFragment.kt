@@ -61,7 +61,7 @@ class DashBoardFragment : Fragment() {
         chart1.setCenterTextTypeface(tf)
 
         // radius of the center hole in percent of maximum radius
-        chart1.holeRadius = 65f
+        chart1.holeRadius = 45f
         chart1.transparentCircleRadius = 50f
 
         val l = chart1.getLegend()
@@ -95,16 +95,20 @@ class DashBoardFragment : Fragment() {
         for (c in MY_COLORS) colors.add(c)
 
         set.colors = colors
+        set.valueTextSize = 18f
         val data = PieData(set)
         return data
     }
 
     private fun generateCenterText(): SpannableString? {
-        val s = SpannableString("Score\nSummary")
-        s.setSpan(RelativeSizeSpan(2f), 0, 8, 0)
-        s.setSpan(ForegroundColorSpan(Color.GRAY), 8, s.length, 0)
+        var centerText = "Score\nSummary"
+        val s = SpannableString(centerText)
+        s.setSpan(RelativeSizeSpan(2f), 0, centerText.length, 0)
+        s.setSpan(ForegroundColorSpan(Color.GRAY), 0, centerText.length, 0)
         return s
     }
+
+
 
     private fun showScore() {
         Phase1Score.text = phase1Score.toString()

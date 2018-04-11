@@ -204,7 +204,7 @@
     <color name="tooltip_background_light">#e6FFFFFF</color>
     <color name="transparent">#80000000</color>
     <color name="white">#FFFFFF</color>
-    <color name="yellow">#ffd600</color>
+    <color name="yellow">#dab908</color>
     <declare-styleable name="ActionBar"><attr name="navigationMode">
             
             <enum name="normal" value="0"/>
