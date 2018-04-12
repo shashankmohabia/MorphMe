@@ -1,3 +1,5 @@
+@file:Suppress("DEPRECATION")
+
 package com.example.shashankmohabia.morphme.MainGame.Activities
 
 import android.app.ProgressDialog
@@ -136,7 +138,7 @@ class MainActivity : AppCompatActivity() {
             override fun onDataChange(dataSnapshot: DataSnapshot) {
                 if (dataSnapshot.exists()) {
                     isAdmin = dataSnapshot.child("superUserStatus").value.toString()
-                    testButton.text = isAdmin
+                    //testButton.text = isAdmin
 
                 }
             }

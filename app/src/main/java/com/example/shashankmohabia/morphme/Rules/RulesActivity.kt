@@ -12,6 +12,7 @@ import com.example.shashankmohabia.morphme.MainGame.Activities.MainActivity
 import com.example.shashankmohabia.morphme.R
 import kotlinx.android.synthetic.main.activity_rules.*
 
+@Suppress("DEPRECATION")
 /**
  * Created by Shashank Mohabia on 2/20/2018.
  */

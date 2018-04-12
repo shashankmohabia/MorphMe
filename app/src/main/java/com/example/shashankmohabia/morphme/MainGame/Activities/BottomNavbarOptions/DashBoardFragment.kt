@@ -27,6 +27,7 @@ import com.github.mikephil.charting.data.PieEntry
 import java.util.ArrayList
 
 
+@Suppress("DEPRECATION")
 class DashBoardFragment : Fragment() {
 
     var phase1Score: Long = 0

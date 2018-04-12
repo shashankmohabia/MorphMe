@@ -39,9 +39,9 @@ public class SliderAdapter extends PagerAdapter {
 
 
     public String[] slider_descriptions = {
-            "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-            "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-            "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+            "Swipe left if you think it is FAKE!",
+            "Swipe right if you think it is NOT FAKE!",
+            "Do not leave a level in between, else the level will start again.",
     };
 
 

@@ -23,6 +23,7 @@ import java.io.ByteArrayOutputStream
 import java.io.IOException
 
 
+@Suppress("NAME_SHADOWING")
 class AddQuestionFragment : Fragment() {
 
     var phase: String? = null

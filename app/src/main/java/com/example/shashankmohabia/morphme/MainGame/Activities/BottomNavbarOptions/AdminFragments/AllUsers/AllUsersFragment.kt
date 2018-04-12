@@ -1,3 +1,5 @@
+@file:Suppress("DEPRECATION")
+
 package com.example.shashankmohabia.morphme.MainGame.AdminFragments.AllUsers
 
 import android.app.ProgressDialog
