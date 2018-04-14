@@ -15,8 +15,9 @@ import android.view.ViewGroup
 import com.example.shashankmohabia.morphme.R
 import com.google.firebase.database.*
 import kotlinx.android.synthetic.main.fragment_all_users.*
-import java.util.ArrayList
 import android.support.v7.widget.DividerItemDecoration
+import com.example.shashankmohabia.morphme.MainGame.HomeFragments.QuestionModel
+import java.util.*
 
 
 class AllUsersFragment : Fragment() {
@@ -56,7 +57,7 @@ class AllUsersFragment : Fragment() {
         pdCanceller.postDelayed(progressRunnable, 1500)
     }
 
-    private fun getUserObjectList(): List<AllUsersObject> {
+    private fun getUserObjectList(): ArrayList<AllUsersObject> {
         return allUsersObjectArrayList
     }
 
@@ -75,7 +76,13 @@ class AllUsersFragment : Fragment() {
 
             }
         })
+
     }
+
+    fun getCompByName(): Comparator<AllUsersObject> {
+        return Comparator { s1, s2 -> s1.userName?.compareTo(s2.userName.toString())!! }
+    }
+
 
     private fun fetchUserInfo(key: String?) {
         val userId: String? = key
@@ -92,11 +99,12 @@ class AllUsersFragment : Fragment() {
                         profilePicUrl = dataSnapshot.child("profilePicUrl").value!!.toString()
                     }
 
-                    var phase1Score = dataSnapshot.child("scorePhase1").value as Long
-                    var phase2Score = dataSnapshot.child("scorePhase2").value as Long
+                    val phase1Score = dataSnapshot.child("scorePhase1").value as Long
+                    val phase2Score = dataSnapshot.child("scorePhase2").value as Long
 
                     val obj = AllUsersObject(userId, name, profilePicUrl, phase1Score + phase2Score)
                     allUsersObjectArrayList.add(obj)
+                    Collections.sort(allUsersObjectArrayList, getCompByName())
                     mAdapter?.notifyDataSetChanged()
                 }
             }

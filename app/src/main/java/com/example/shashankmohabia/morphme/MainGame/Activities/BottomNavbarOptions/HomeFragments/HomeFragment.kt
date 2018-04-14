@@ -335,10 +335,6 @@ class HomeFragment : Fragment() {
     }
 
     fun getCompByLevel(): Comparator<QuestionModel> {
-        return object : Comparator<QuestionModel> {
-            override fun compare(s1: QuestionModel, s2: QuestionModel): Int {
-                return s1.questionLevel.compareTo(s2.questionLevel)
-            }
-        }
+        return Comparator { s1, s2 -> s1.questionLevel.compareTo(s2.questionLevel) }
     }
 }

@@ -7,13 +7,7 @@
     android:background="@mipmap/slider_background"
     tools:context="com.example.shashankmohabia.morphme.MainGame.Activities.MainActivity">
 
-    <!-- <TextView
-         android:id="@+id/testButton"
-         android:layout_width="match_parent"
-         android:layout_height="100dp"
-         android:gravity="center"
-         android:text="hiiiiiii" />
- -->
+
 
     <FrameLayout
         android:id="@+id/mainFrame"
