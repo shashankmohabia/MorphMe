@@ -52,11 +52,11 @@ class AddQuestionFragment : Fragment() {
 
     }
 
-    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent) {
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
 
         if (requestCode == 1 && resultCode == Activity.RESULT_OK) {
-            val imageUri = data.data
+            val imageUri = data?.data
             resultImageURI = imageUri
             questionMedia.setImageURI(resultImageURI)
         }

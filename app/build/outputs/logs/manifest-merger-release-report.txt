@@ -381,7 +381,7 @@ ADDED from [com.google.firebase:firebase-iid:12.0.1] C:\Users\shash\.gradle\cach
 		ADDED from [com.google.firebase:firebase-iid:12.0.1] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\firebase-iid-12.0.1.aar\36ca01cd843ba764873d8646cbb20b89\AndroidManifest.xml:30:9-44
 	android:name
 		ADDED from [com.google.firebase:firebase-iid:12.0.1] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\firebase-iid-12.0.1.aar\36ca01cd843ba764873d8646cbb20b89\AndroidManifest.xml:29:9-63
-permission#com.example.shashankmohabia.morphme.permission.C2D_MESSAGE
+permission#com.shashankmohabia.morphme.permission.C2D_MESSAGE
 ADDED from [com.google.firebase:firebase-iid:12.0.1] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\firebase-iid-12.0.1.aar\36ca01cd843ba764873d8646cbb20b89\AndroidManifest.xml:28:5-30:47
 	android:protectionLevel
 		ADDED from [com.google.firebase:firebase-iid:12.0.1] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\firebase-iid-12.0.1.aar\36ca01cd843ba764873d8646cbb20b89\AndroidManifest.xml:30:9-44
@@ -391,7 +391,7 @@ uses-permission#${applicationId}.permission.C2D_MESSAGE
 ADDED from [com.google.firebase:firebase-iid:12.0.1] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\firebase-iid-12.0.1.aar\36ca01cd843ba764873d8646cbb20b89\AndroidManifest.xml:32:5-79
 	android:name
 		ADDED from [com.google.firebase:firebase-iid:12.0.1] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\firebase-iid-12.0.1.aar\36ca01cd843ba764873d8646cbb20b89\AndroidManifest.xml:32:22-76
-uses-permission#com.example.shashankmohabia.morphme.permission.C2D_MESSAGE
+uses-permission#com.shashankmohabia.morphme.permission.C2D_MESSAGE
 ADDED from [com.google.firebase:firebase-iid:12.0.1] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\firebase-iid-12.0.1.aar\36ca01cd843ba764873d8646cbb20b89\AndroidManifest.xml:32:5-79
 	android:name
 		ADDED from [com.google.firebase:firebase-iid:12.0.1] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\firebase-iid-12.0.1.aar\36ca01cd843ba764873d8646cbb20b89\AndroidManifest.xml:32:22-76
@@ -405,7 +405,7 @@ ADDED from [com.google.firebase:firebase-iid:12.0.1] C:\Users\shash\.gradle\cach
 		ADDED from [com.google.firebase:firebase-iid:12.0.1] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\firebase-iid-12.0.1.aar\36ca01cd843ba764873d8646cbb20b89\AndroidManifest.xml:36:13-78
 intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE+category:name:${applicationId}
 ADDED from [com.google.firebase:firebase-iid:12.0.1] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\firebase-iid-12.0.1.aar\36ca01cd843ba764873d8646cbb20b89\AndroidManifest.xml:39:13-43:29
-intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE+category:name:com.example.shashankmohabia.morphme
+intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE+category:name:com.shashankmohabia.morphme
 ADDED from [com.google.firebase:firebase-iid:12.0.1] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\firebase-iid-12.0.1.aar\36ca01cd843ba764873d8646cbb20b89\AndroidManifest.xml:39:13-43:29
 action#com.google.android.c2dm.intent.RECEIVE
 ADDED from [com.google.firebase:firebase-iid:12.0.1] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\firebase-iid-12.0.1.aar\36ca01cd843ba764873d8646cbb20b89\AndroidManifest.xml:40:17-81
@@ -415,7 +415,7 @@ category#${applicationId}
 ADDED from [com.google.firebase:firebase-iid:12.0.1] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\firebase-iid-12.0.1.aar\36ca01cd843ba764873d8646cbb20b89\AndroidManifest.xml:42:17-61
 	android:name
 		ADDED from [com.google.firebase:firebase-iid:12.0.1] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\firebase-iid-12.0.1.aar\36ca01cd843ba764873d8646cbb20b89\AndroidManifest.xml:42:27-58
-category#com.example.shashankmohabia.morphme
+category#com.shashankmohabia.morphme
 ADDED from [com.google.firebase:firebase-iid:12.0.1] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\firebase-iid-12.0.1.aar\36ca01cd843ba764873d8646cbb20b89\AndroidManifest.xml:42:17-61
 	android:name
 		ADDED from [com.google.firebase:firebase-iid:12.0.1] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\firebase-iid-12.0.1.aar\36ca01cd843ba764873d8646cbb20b89\AndroidManifest.xml:42:27-58

@@ -1,1 +1,1 @@
-com.example.shashankmohabia.morphme.test
+com.shashankmohabia.morphme.test

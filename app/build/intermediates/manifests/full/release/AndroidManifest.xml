@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.shashankmohabia.morphme"
+    package="com.shashankmohabia.morphme"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -17,10 +17,10 @@
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
 
     <permission
-        android:name="com.example.shashankmohabia.morphme.permission.C2D_MESSAGE"
+        android:name="com.shashankmohabia.morphme.permission.C2D_MESSAGE"
         android:protectionLevel="signature" />
 
-    <uses-permission android:name="com.example.shashankmohabia.morphme.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.shashankmohabia.morphme.permission.C2D_MESSAGE" />
 
     <application
         android:allowBackup="true"
@@ -92,7 +92,7 @@
             <intent-filter>
                 <action android:name="com.google.android.c2dm.intent.RECEIVE" />
 
-                <category android:name="com.example.shashankmohabia.morphme" />
+                <category android:name="com.shashankmohabia.morphme" />
             </intent-filter>
         </receiver>
         <!--
@@ -109,7 +109,7 @@
 
         <provider
             android:name="com.google.firebase.provider.FirebaseInitProvider"
-            android:authorities="com.example.shashankmohabia.morphme.firebaseinitprovider"
+            android:authorities="com.shashankmohabia.morphme.firebaseinitprovider"
             android:exported="false"
             android:initOrder="100" />
 

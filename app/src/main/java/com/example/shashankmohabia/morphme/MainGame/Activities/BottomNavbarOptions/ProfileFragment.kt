@@ -30,6 +30,7 @@ class ProfileFragment : Fragment() {
     private var userId: String? = null
     private var resultURI: Uri? = null
 
+
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
 
@@ -49,11 +50,11 @@ class ProfileFragment : Fragment() {
         })
     }
 
-    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent) {
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
 
         if (requestCode == 1 && resultCode == Activity.RESULT_OK) {
-            val imageUri = data.data
+            val imageUri = data?.data
             resultURI = imageUri
             profilePic.setImageURI(resultURI)
             updateProfilePic()

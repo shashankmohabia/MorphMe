@@ -9,7 +9,7 @@ package com.example.shashankmohabia.morphme;
 
 public final class Manifest {
   public static final class permission {
-    public static final String C2D_MESSAGE="com.example.shashankmohabia.morphme.permission.C2D_MESSAGE";
+    public static final String C2D_MESSAGE="com.shashankmohabia.morphme.permission.C2D_MESSAGE";
   }
 
 }
