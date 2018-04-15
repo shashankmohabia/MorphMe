@@ -81,9 +81,9 @@ class DashBoardFragment : Fragment() {
         val entries: ArrayList<PieEntry> = ArrayList()
 
         entries.add(PieEntry(level1Score.toFloat(), "Level 1"))
-        entries.add(PieEntry(26.7f, "Level 2"))
-        entries.add(PieEntry(24.0f, "Level 3"))
-        entries.add(PieEntry(30.8f, "Level 4"))
+        entries.add(PieEntry(level2Score.toFloat(), "Level 2"))
+        entries.add(PieEntry(level3Score.toFloat(), "Level 3"))
+        entries.add(PieEntry(level4Score.toFloat(), "Level 4"))
 
         val set = PieDataSet(entries, "")
         val MY_COLORS = intArrayOf(
@@ -112,6 +112,7 @@ class DashBoardFragment : Fragment() {
 
 
     private fun showScore() {
+        showPieChart()
         Phase1Score.text = phase1Score.toString()
         Phase2Score.text = phase2Score.toString()
     }
