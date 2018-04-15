@@ -4,7 +4,7 @@
             "outputFile": "S:\\DevD\\MorphMe\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zh-rTW\\values-zh-rTW.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\42b967c6eab66f36c7bfdf2c4f861ef8\\res\\values-zh-rTW\\values-zh-rTW.xml",
+                    "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\15ae9f9e7a8d9b897e985eb6d1e916de\\res\\values-zh-rTW\\values-zh-rTW.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -18,23 +18,6 @@
                         "startOffsets": "105,200,293,393,475,572,680,756,832,910,1006,1102,1197,1294,1389,1489,1639,4041",
                         "endColumns": "94,92,99,81,96,107,75,75,77,95,95,94,96,94,99,149,93,77",
                         "endOffsets": "195,288,388,470,567,675,751,827,905,1001,1097,1192,1289,1384,1484,1634,1728,4114"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.0.aar\\c36d6a8bd6f68854c0fef66e20119921\\res\\values-zh-rTW\\values-zh-rTW.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "38",
-                        "startColumns": "4",
-                        "startOffsets": "4119",
-                        "endColumns": "100",
-                        "endOffsets": "4215"
                     }
                 },
                 {
@@ -69,6 +52,23 @@
                         "startOffsets": "1733,1836,1996,2113,2217,2383,2501,2631,2917,3086,3189,3349,3466,3627,3765,3851,3938",
                         "endColumns": "102,159,116,103,165,117,129,123,168,102,159,116,160,137,85,86,102",
                         "endOffsets": "1831,1991,2108,2212,2378,2496,2626,2750,3081,3184,3344,3461,3622,3760,3846,3933,4036"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\shash\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\3687bb74b038edfa933ece9fa5711585\\res\\values-zh-rTW\\values-zh-rTW.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "38",
+                        "startColumns": "4",
+                        "startOffsets": "4119",
+                        "endColumns": "100",
+                        "endOffsets": "4215"
                     }
                 }
             ]

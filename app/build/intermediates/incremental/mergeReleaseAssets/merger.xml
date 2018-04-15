@@ -1,2 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="S:\DevD\MorphMe\app\src\main\assets"><file name="OpenSans-Light.ttf" path="S:\DevD\MorphMe\app\src\main\assets\OpenSans-Light.ttf"/></source><source path="S:\DevD\MorphMe\app\src\main\res\assets"/><source path="S:\DevD\MorphMe\app\build\generated\assets\shaders\release"/></dataSet><dataSet config="release"><source path="S:\DevD\MorphMe\app\src\release\assets"/></dataSet></merger>
