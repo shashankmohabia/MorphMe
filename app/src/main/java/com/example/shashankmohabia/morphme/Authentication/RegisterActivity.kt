@@ -1,6 +1,8 @@
 package com.example.shashankmohabia.morphme.Authentication
 
 import android.content.Intent
+import android.graphics.Color
+import android.graphics.PorterDuff
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -13,9 +15,11 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase
 import kotlinx.android.synthetic.main.activity_register.*
 
+@Suppress("DEPRECATION")
 class RegisterActivity : AppCompatActivity() {
 
     var gender: String? = null
+    var age: String? = null
     private var mAuth: FirebaseAuth? = null
     private var firebaseAuthStateListener: FirebaseAuth.AuthStateListener? = null
 
@@ -24,9 +28,8 @@ class RegisterActivity : AppCompatActivity() {
         setContentView(R.layout.activity_register)
 
         mAuth = FirebaseAuth.getInstance()
-
         getGender()
-
+        getUserAge()
         firebaseAuthStateListener = FirebaseAuth.AuthStateListener {
             if (FirebaseAuth.getInstance().currentUser != null) {
                 val intent = Intent(this, RulesActivity::class.java)
@@ -44,9 +47,9 @@ class RegisterActivity : AppCompatActivity() {
                     } else {
                         val userId = mAuth!!.currentUser!!.uid
                         val dbRefer = FirebaseDatabase.getInstance().reference.child("Users").child(userId)
-                        var userInfo: MutableMap<String, Any> = mutableMapOf()
+                        val userInfo: MutableMap<String, Any> = mutableMapOf()
                         userInfo.put("name", editName.text.toString())
-                        userInfo.put("age", editAge.text.toString())
+                        userInfo.put("age", age!!)
                         userInfo.put("country", editCountry.text.toString())
                         userInfo.put("superUserStatus", "no")
                         userInfo.put("gender", gender.toString())
@@ -61,6 +64,23 @@ class RegisterActivity : AppCompatActivity() {
                 textPasswordDoNotMatch.visibility = View.VISIBLE
             }
         }
+    }
+
+    private fun getUserAge() {
+        ageSeekbar.getThumb().setColorFilter(resources.getColor(R.color.logoColor), PorterDuff.Mode.SRC_IN);
+        ageSeekbar?.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
+            override fun onProgressChanged(seekBar: SeekBar, progress: Int, fromUser: Boolean) {
+                ageProgress.text = " Age: " + progress.toString()
+            }
+
+            override fun onStartTrackingTouch(seekBar: SeekBar) {
+            }
+
+            override fun onStopTrackingTouch(seekBar: SeekBar) {
+                age = seekBar.progress.toString()
+            }
+        })
+
     }
 
     private fun getGender() {

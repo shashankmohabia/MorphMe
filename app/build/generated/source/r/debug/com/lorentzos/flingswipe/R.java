@@ -9,9 +9,9 @@ package com.lorentzos.flingswipe;
 public final class R {
     public static final class attr {
         public static final int SwipeFlingStyle = 0x7f030000;
-        public static final int max_visible = 0x7f030121;
-        public static final int min_adapter_stack = 0x7f030126;
-        public static final int rotation_degrees = 0x7f030150;
+        public static final int max_visible = 0x7f030142;
+        public static final int min_adapter_stack = 0x7f030147;
+        public static final int rotation_degrees = 0x7f030169;
     }
     public static final class string {
         public static final int app_name = 0x7f0d001d;
@@ -20,7 +20,7 @@ public final class R {
         public static final int SwipeFling = 0x7f0e00c7;
     }
     public static final class styleable {
-        public static final int[] SwipeFlingAdapterView = { 0x7f030000, 0x7f030121, 0x7f030126, 0x7f030150 };
+        public static final int[] SwipeFlingAdapterView = { 0x7f030000, 0x7f030142, 0x7f030147, 0x7f030169 };
         public static final int SwipeFlingAdapterView_SwipeFlingStyle = 0;
         public static final int SwipeFlingAdapterView_max_visible = 1;
         public static final int SwipeFlingAdapterView_min_adapter_stack = 2;

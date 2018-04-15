@@ -5,7 +5,6 @@ INJECTED from S:\DevD\MorphMe\app\src\main\AndroidManifest.xml:2:1-39:12
 INJECTED from S:\DevD\MorphMe\app\src\main\AndroidManifest.xml:2:1-39:12
 INJECTED from S:\DevD\MorphMe\app\src\main\AndroidManifest.xml:2:1-39:12
 MERGED from [com.roughike:bottom-bar:2.3.1] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\bottom-bar-2.3.1.aar\7114255f6faa87ac058f030c8722dea4\AndroidManifest.xml:2:1-12:12
-MERGED from [io.apptik.widget:multislider:1.3] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\multislider-1.3.aar\9bb79f56457ce13e6fb5470010f0f5af\AndroidManifest.xml:2:1-14:12
 MERGED from [com.android.support:design:27.1.1] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\f2a531364a16dfddc1ca4c26987dcb2e\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\15ae9f9e7a8d9b897e985eb6d1e916de\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-database:12.0.1] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\firebase-database-12.0.1.aar\ef609ec80f3424db4dfc8330349324cb\AndroidManifest.xml:2:1-8:12
@@ -28,6 +27,7 @@ MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\shash\
 MERGED from [com.android.support:cardview-v7:27.1.1] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.1.1.aar\fc11588c070d74dfcdeea08dc4dc3cbc\AndroidManifest.xml:17:1-22:12
 MERGED from [com.lorentzos.swipecards:library:1.0.9] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\library-1.0.9.aar\151c883266a60fd4571440db67f1d881\AndroidManifest.xml:2:1-14:12
 MERGED from [de.hdodenhof:circleimageview:2.2.0] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\circleimageview-2.2.0.aar\a1cd70da8bbb967ff23dbcfc3bc5da1d\AndroidManifest.xml:2:1-11:12
+MERGED from [com.xw.repo:bubbleseekbar:3.17-lite] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\bubbleseekbar-3.17-lite.aar\2cf7c3341d057ae668f44c2b78dcf567\AndroidManifest.xml:2:1-14:12
 MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\8ea712905f161967bec2ff85ffe90758\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\f8ee2b3814daa8d6554764b18e0f86ab\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\735b46597007b2779093b822418cdc64\AndroidManifest.xml:17:1-22:12
@@ -74,8 +74,6 @@ ADDED from S:\DevD\MorphMe\app\src\main\AndroidManifest.xml:5:5-80
 		ADDED from S:\DevD\MorphMe\app\src\main\AndroidManifest.xml:5:22-77
 application
 ADDED from S:\DevD\MorphMe\app\src\main\AndroidManifest.xml:7:5-37:19
-MERGED from [io.apptik.widget:multislider:1.3] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\multislider-1.3.aar\9bb79f56457ce13e6fb5470010f0f5af\AndroidManifest.xml:11:5-12:19
-MERGED from [io.apptik.widget:multislider:1.3] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\multislider-1.3.aar\9bb79f56457ce13e6fb5470010f0f5af\AndroidManifest.xml:11:5-12:19
 MERGED from [com.google.firebase:firebase-auth:12.0.1] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\firebase-auth-12.0.1.aar\bbed9b443f15fa1ae3e526740bcca18d\AndroidManifest.xml:22:5-30:19
 MERGED from [com.google.firebase:firebase-auth:12.0.1] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\firebase-auth-12.0.1.aar\bbed9b443f15fa1ae3e526740bcca18d\AndroidManifest.xml:22:5-30:19
 MERGED from [com.google.firebase:firebase-core:12.0.1] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\firebase-core-12.0.1.aar\004e8275caef0025e5249be333e88d32\AndroidManifest.xml:5:5-20
@@ -100,6 +98,8 @@ MERGED from [com.lorentzos.swipecards:library:1.0.9] C:\Users\shash\.gradle\cach
 MERGED from [com.lorentzos.swipecards:library:1.0.9] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\library-1.0.9.aar\151c883266a60fd4571440db67f1d881\AndroidManifest.xml:12:5-20
 MERGED from [de.hdodenhof:circleimageview:2.2.0] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\circleimageview-2.2.0.aar\a1cd70da8bbb967ff23dbcfc3bc5da1d\AndroidManifest.xml:9:5-20
 MERGED from [de.hdodenhof:circleimageview:2.2.0] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\circleimageview-2.2.0.aar\a1cd70da8bbb967ff23dbcfc3bc5da1d\AndroidManifest.xml:9:5-20
+MERGED from [com.xw.repo:bubbleseekbar:3.17-lite] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\bubbleseekbar-3.17-lite.aar\2cf7c3341d057ae668f44c2b78dcf567\AndroidManifest.xml:12:5-20
+MERGED from [com.xw.repo:bubbleseekbar:3.17-lite] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\bubbleseekbar-3.17-lite.aar\2cf7c3341d057ae668f44c2b78dcf567\AndroidManifest.xml:12:5-20
 MERGED from [com.google.firebase:firebase-database-license:12.0.1] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\firebase-database-license-12.0.1.aar\edf76ed6e4c97bfa0566754b04903fd5\AndroidManifest.xml:22:5-20
 MERGED from [com.google.firebase:firebase-database-license:12.0.1] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\firebase-database-license-12.0.1.aar\edf76ed6e4c97bfa0566754b04903fd5\AndroidManifest.xml:22:5-20
 MERGED from [com.google.firebase:firebase-storage-license:12.0.1] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\firebase-storage-license-12.0.1.aar\06e307b149774d11144a209276ab3023\AndroidManifest.xml:22:5-20
@@ -190,8 +190,6 @@ INJECTED from S:\DevD\MorphMe\app\src\main\AndroidManifest.xml
 INJECTED from S:\DevD\MorphMe\app\src\main\AndroidManifest.xml
 MERGED from [com.roughike:bottom-bar:2.3.1] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\bottom-bar-2.3.1.aar\7114255f6faa87ac058f030c8722dea4\AndroidManifest.xml:8:5-10:41
 MERGED from [com.roughike:bottom-bar:2.3.1] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\bottom-bar-2.3.1.aar\7114255f6faa87ac058f030c8722dea4\AndroidManifest.xml:8:5-10:41
-MERGED from [io.apptik.widget:multislider:1.3] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\multislider-1.3.aar\9bb79f56457ce13e6fb5470010f0f5af\AndroidManifest.xml:7:5-9:41
-MERGED from [io.apptik.widget:multislider:1.3] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\multislider-1.3.aar\9bb79f56457ce13e6fb5470010f0f5af\AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:design:27.1.1] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\f2a531364a16dfddc1ca4c26987dcb2e\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:design:27.1.1] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\f2a531364a16dfddc1ca4c26987dcb2e\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\15ae9f9e7a8d9b897e985eb6d1e916de\AndroidManifest.xml:20:5-44
@@ -236,6 +234,8 @@ MERGED from [com.lorentzos.swipecards:library:1.0.9] C:\Users\shash\.gradle\cach
 MERGED from [com.lorentzos.swipecards:library:1.0.9] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\library-1.0.9.aar\151c883266a60fd4571440db67f1d881\AndroidManifest.xml:8:5-10:41
 MERGED from [de.hdodenhof:circleimageview:2.2.0] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\circleimageview-2.2.0.aar\a1cd70da8bbb967ff23dbcfc3bc5da1d\AndroidManifest.xml:5:5-7:41
 MERGED from [de.hdodenhof:circleimageview:2.2.0] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\circleimageview-2.2.0.aar\a1cd70da8bbb967ff23dbcfc3bc5da1d\AndroidManifest.xml:5:5-7:41
+MERGED from [com.xw.repo:bubbleseekbar:3.17-lite] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\bubbleseekbar-3.17-lite.aar\2cf7c3341d057ae668f44c2b78dcf567\AndroidManifest.xml:8:5-10:41
+MERGED from [com.xw.repo:bubbleseekbar:3.17-lite] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\bubbleseekbar-3.17-lite.aar\2cf7c3341d057ae668f44c2b78dcf567\AndroidManifest.xml:8:5-10:41
 MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\8ea712905f161967bec2ff85ffe90758\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\8ea712905f161967bec2ff85ffe90758\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\shash\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\f8ee2b3814daa8d6554764b18e0f86ab\AndroidManifest.xml:20:5-44
