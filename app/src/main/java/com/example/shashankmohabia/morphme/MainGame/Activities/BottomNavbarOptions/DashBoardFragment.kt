@@ -32,12 +32,13 @@ class DashBoardFragment : Fragment() {
 
     var phase1Score: Long = 0
     var phase2Score: Long = 0
+    var level1Score: Long = 0
+    var level2Score: Long = 0
+    var level3Score: Long = 0
+    var level4Score: Long = 0
+
     var userID: String? = null
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-    }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
@@ -48,7 +49,7 @@ class DashBoardFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         calculateScore()
-        showPieChart()
+
     }
 
     private fun showPieChart() {
@@ -79,7 +80,7 @@ class DashBoardFragment : Fragment() {
     private fun generatePieData(): PieData? {
         val entries: ArrayList<PieEntry> = ArrayList()
 
-        entries.add(PieEntry(18.5f, "Level 1"))
+        entries.add(PieEntry(level1Score.toFloat(), "Level 1"))
         entries.add(PieEntry(26.7f, "Level 2"))
         entries.add(PieEntry(24.0f, "Level 3"))
         entries.add(PieEntry(30.8f, "Level 4"))
@@ -90,7 +91,7 @@ class DashBoardFragment : Fragment() {
                 view!!.context.getResources().getColor(R.color.blue),
                 view!!.context.getResources().getColor(R.color.green),
                 view!!.context.getResources().getColor(R.color.yellow)
-                )
+        )
         val colors = ArrayList<Int>()
 
         for (c in MY_COLORS) colors.add(c)
@@ -102,13 +103,12 @@ class DashBoardFragment : Fragment() {
     }
 
     private fun generateCenterText(): SpannableString? {
-        var centerText = "Score\nSummary"
+        val centerText = "Score\nSummary"
         val s = SpannableString(centerText)
         s.setSpan(RelativeSizeSpan(2f), 0, centerText.length, 0)
         s.setSpan(ForegroundColorSpan(Color.GRAY), 0, centerText.length, 0)
         return s
     }
-
 
 
     private fun showScore() {
@@ -127,6 +127,11 @@ class DashBoardFragment : Fragment() {
                     if (dataSnapshot.exists()) {
                         phase1Score = dataSnapshot.child("scorePhase1").value as Long
                         phase2Score = dataSnapshot.child("scorePhase2").value as Long
+                        level1Score = dataSnapshot.child("scoreLevel1").value as Long
+                        level2Score = dataSnapshot.child("scoreLevel2").value as Long
+                        level3Score = dataSnapshot.child("scoreLevel3").value as Long
+                        level4Score = dataSnapshot.child("scoreLevel4").value as Long
+
                         // Log.d("dash", phase1Score.toString())
                         showScore()
                     }

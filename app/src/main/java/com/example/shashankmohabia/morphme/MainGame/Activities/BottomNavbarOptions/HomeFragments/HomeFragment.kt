@@ -14,8 +14,6 @@ import com.google.firebase.database.*
 import com.lorentzos.flingswipe.SwipeFlingAdapterView
 import kotlinx.android.synthetic.main.fragment_home.*
 import org.jetbrains.anko.support.v4.alert
-import java.lang.Math.ceil
-import java.lang.Math.floor
 import java.util.*
 
 class HomeFragment : Fragment() {
@@ -31,7 +29,9 @@ class HomeFragment : Fragment() {
     var currentLevel = "Level1"
     var phase1Score: Long = 0
     var phase2Score: Long = 0
-    var presentLevel: String? = null
+    var currentLevelScore: Long = 0
+    var levelPassed = "Level 1"
+    var presentLevel = "Level1"
     val scoreArray = intArrayOf(10, 10, 20, 20, 30, 30, 40, 40)
 
 
@@ -56,6 +56,7 @@ class HomeFragment : Fragment() {
                 if (dataSnapshot != null) {
                     if (dataSnapshot.exists()) {
                         currentLevel = dataSnapshot.child("currentLevel").value.toString()
+                        presentLevel = currentLevel
                         phase1Score = dataSnapshot.child("scorePhase1").value as Long
                         phase2Score = dataSnapshot.child("scorePhase2").value as Long
 
@@ -150,7 +151,6 @@ class HomeFragment : Fragment() {
 
                 levelTracker++
                 setLevelIndicator()
-                updateUserLevel()
 
             }
 
@@ -178,7 +178,6 @@ class HomeFragment : Fragment() {
 
                 levelTracker++
                 setLevelIndicator()
-                updateUserLevel()
             }
 
             override fun onAdapterAboutToEmpty(itemsInAdapter: Int) {}
@@ -199,25 +198,25 @@ class HomeFragment : Fragment() {
         when (levelTracker) {
             questionPerLevel -> {
                 level1.visibility = View.VISIBLE
-                presentLevel = "Level 1"
+                levelPassed = "Level 1"
             }
             questionPerLevel * 2 -> {
                 level1.visibility = View.VISIBLE
                 level2.visibility = View.VISIBLE
-                presentLevel = "Level 2"
+                levelPassed = "Level 2"
             }
             questionPerLevel * 3 -> {
                 level1.visibility = View.VISIBLE
                 level2.visibility = View.VISIBLE
                 level3.visibility = View.VISIBLE
-                presentLevel = "Level 3"
+                levelPassed = "Level 3"
             }
             questionPerLevel * 4 -> {
                 level1.visibility = View.VISIBLE
                 level2.visibility = View.VISIBLE
                 level3.visibility = View.VISIBLE
                 level4.visibility = View.VISIBLE
-                presentLevel = "Level 4"
+                levelPassed = "Level 4"
             }
         }
     }
@@ -226,15 +225,22 @@ class HomeFragment : Fragment() {
         val userLevelInfo: MutableMap<String, Any> = mutableMapOf()
         when (levelTracker) {
             questionPerLevel -> {
+                currentLevelScore = 0
                 userLevelInfo.put("currentLevel", "Level2")
+                presentLevel = "Level2"
             }
             questionPerLevel * 2 -> {
+                currentLevelScore = 0
                 userLevelInfo.put("currentLevel", "Level3")
+                presentLevel = "Level3"
             }
             questionPerLevel * 3 -> {
+                currentLevelScore = 0
                 userLevelInfo.put("currentLevel", "Level4")
+                presentLevel = "Level4"
             }
             questionPerLevel * 4 -> {
+                currentLevelScore = 0
                 userLevelInfo.put("currentLevel", "done")
             }
         }
@@ -247,6 +253,8 @@ class HomeFragment : Fragment() {
         questionInfo.put("companionQuestionResponse", companionQuestionAnswer)
         dbRefer.updateChildren(questionInfo)
         levelCompletionMessage()
+
+        updateUserLevel()
     }
 
     private fun addCorrectResponse(item: QuestionModel, companionQuestionAnswer: String) {
@@ -256,18 +264,39 @@ class HomeFragment : Fragment() {
         questionInfo.put("companionQuestionResponse", companionQuestionAnswer)
         dbRefer.updateChildren(questionInfo)
         levelCompletionMessage()
+
+        updateUserLevel()
     }
 
     private fun levelCompletionMessage() {
         if (levelTracker % questionPerLevel == 0) {
             alert {
-                message = "You have successfully completed " + presentLevel
+                message = "You have successfully completed " + levelPassed
                 title = "Congratulations"
             }.show()
         }
     }
 
     private fun updateScore() {
+        val scoreInfo: MutableMap<String, Any> = mutableMapOf()
+        when (presentLevel) {
+            "Level1" -> {
+                currentLevelScore += 10
+                scoreInfo.put("scoreLevel1", currentLevelScore)
+            }
+            "Level2" -> {
+                currentLevelScore += 20
+                scoreInfo.put("scoreLevel2", currentLevelScore)
+            }
+            "Level3" -> {
+                currentLevelScore += 30
+                scoreInfo.put("scoreLevel3", currentLevelScore)
+            }
+            "Level4" -> {
+                currentLevelScore += 40
+                scoreInfo.put("scoreLevel4", currentLevelScore)
+            }
+        }
         //Log.d("final", levelTracker.toString())
         if (levelTracker > 6) {
             //Log.d("final", scoreArray[levelTracker-1].toString())
@@ -277,7 +306,6 @@ class HomeFragment : Fragment() {
             phase1Score += scoreArray[levelTracker - 1]
         }
 
-        val scoreInfo: MutableMap<String, Any> = mutableMapOf()
         scoreInfo.put("scorePhase1", phase1Score)
         scoreInfo.put("scorePhase2", phase2Score)
         userDb.updateChildren(scoreInfo)
